@@ -1,0 +1,12 @@
+/*
+* @Author: anchen
+* @Date:   2016-02-27 15:06:42
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-02-27 15:36:39
+*/
+
+.bd{margin-bottom: 50px;}
+.content{width: 80%; margin: 0 auto;}
+.content ul li{float: left; width: 30%;height: 200px; border: 1px solid #addcc8; border-radius: 20px; margin:0 10px 50px 0; background: url(../assets/images/bg.jpg); background-size: cover; transform: perspective(800px) rotateY(20deg); transition: 1s all ease;}
+.content ul li:hover{transform: perspective(800px) rotateY(0deg);}
+.content ul li a{display: block; width: 100%; height: 100%; font-size: 30px; font-weight: bold; text-align: center; line-height: 200px; color: #fff; background: rgba(0,0,0,0.5); border-radius: 20px;}

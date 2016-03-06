@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>js 效果 －  柠檬不萌</title>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/css_list.css" rel="stylesheet">
+    <style>
+        .con{display: none; width: 200px; height: 200px; border: 2px solid #094857; font-weight: bold; font-size: 20px; text-align: center; line-height: 200px;}
+        .active{background: #859678; border: none;}
+        .left input{padding: 5px;}
+    </style>
+    <script>
+    window.onload=function (){
+        var aBtn=document.getElementsByTagName('input');
+        var aDiv=document.querySelectorAll('.con');
+        for (var i=0; i<aBtn.length; i++)
+        {   
+            aBtn[i].index=i;
+            aBtn[i].onclick=function (){
+                for (var i=0; i<aBtn.length; i++)
+                {
+                    aBtn[i].className='';
+                    aDiv[i].style.display='';
+                }
+                this.className='active';
+                var index=[this.index];
+                aDiv[index].style.display='block';
+
+            };
+        }
+    };
+    </script>
+</head>
+<body>
+<div class="article">
+    <div class="head">
+        <h1><a href="/" class="name">柠檬</a><a href="index.html" class="home">F-Christina.github.io</a></h1>
+    </div>
+    <div class="main">
+        <div class="left">
+            <h2>选项卡</h2>
+            <input type="button" value="动漫" class="active" />
+            <input type="button" value="电视剧" />
+            <input type="button" value="电影" />
+            <div class="con" style="display: block;">0</div>
+            <div class="con">1</div>
+            <div class="con">2</div>
+        </div>
+        <div class="right">
+            
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>

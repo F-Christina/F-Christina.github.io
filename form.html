@@ -11,21 +11,10 @@
         html,body{
             height:100%;
         }
-        body{
-            font-size: 50px;
-            font-weight: bold;
-            font-family: "Microsoft yahei";
-        }
-
-        .box{
-            width:300px;
-            height:300px;
-            background: url(assets/images/3D/6.jpeg) no-repeat;
-            background-size: cover;
-            margin: 10px auto;
-            -webkit-box-reflect: below 10px -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.5));
-            margin-bottom: 300px;
-            }
+        .con_tag{font-size: 20px; }
+        .con_tag xmp{padding: 5px;}
+        .con_tag xmp:nth-child(odd){background: #addcc8;}
+        .con_tag xmp:nth-child(even){background: #d9eec7;}
     </style>
     
     <!--[if IE]>
@@ -39,21 +28,27 @@
     </div>
     <div class="main">
         <div class="left">
-            <h2>倒影</h2>
-            <div class="box"></div>
+            <h2>表单新增</h2>
+            <div class="con_tag">
+                <xmp><input type="email" /></xmp>
+                <xmp><input type="number" /></xmp>
+                <xmp><input type="search" /></xmp>
+                <xmp><input type="color" /></xmp>
+                <xmp><input type="date" /></xmp>
+                <xmp><input type="month" /></xmp>
+                <xmp><input type="week" /></xmp>
+                <xmp><input type="time" /></xmp>
+                <xmp><input type="datetime-local" /></xmp>
+                <xmp><input type="tel" /></xmp>
+                <xmp><input type="range" /></xmp>
+                <xmp><input type="url" /></xmp>
+            </div>
         </div>
         <div class="right">
             <h2>介绍</h2>
-            <p>1. 用CSS3 -webkit-box-reflect 写出的倒影效果</p>
-            <p>2. -webkit-box-reflect :方向 距离 渐变</p>
-            <p>3. 方向可写below/aobve</p>
+            
         </div>
     </div>
 </div>
 </body>
 </html>
-
-
-
-
-

@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/base.css">
+   <title>css3 效果 －  柠檬不萌</title>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/css_list.css" rel="stylesheet">
     <style>
+        html,body{
+            height:700px;
+        }
         .box{
             width:700px;
             height:400px;
             background: url(assets/images/0.jpg) no-repeat;
-            margin: 50px auto;
             position: relative;
         }
+        .article .main .left{width: 700px;margin-right:15px;}
+        .article .main .right{width: 235px;}
         .page{
             position: absolute;
             right:0;
@@ -92,19 +98,28 @@
     </script>
 </head>
 <body>
-    <div class="bd">
-        <h1>F-Christina.github.io</h1>
-        <h2>翻页效果</h2>
-        <a href="css_list.html">&lt;返回css页面</a>
-        <a href="index.html">&lt;返回首页</a>
+<div class="article">
+    <div class="head">
+        <h1><a href="/" class="name">柠檬</a><a href="index.html" class="home">F-Christina.github.io</a></h1>
     </div>
-    <div class="box">
-        <div class="page">
-            <div class="front"></div>
-            <div class="back"></div>
+    <div class="main">
+        <div class="left">
+            <h2>时钟</h2>
+            <div class="box">
+                <div class="page">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+                <div class="page2"></div>
+            </div>  
         </div>
-        <div class="page2"></div>
+        <div class="right">
+            <h2>介绍</h2>
+            <p>用js与CSS3的变形相结合形成的翻页效果</p>
+        </div>
     </div>
+</div>
+    
 </body>
 </html>
 

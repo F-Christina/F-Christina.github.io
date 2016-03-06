@@ -1,34 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/base.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>css3 效果 －  柠檬不萌</title>
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/css_list.css" rel="stylesheet">
     <style>
         html,body{
             height:100%;
         }
         .paper{
-            background: -webkit-repeating-linear-gradient(#fff 0px,#fff 29px,#f00 30px); width: 80%; height: 500px; margin: 50px auto; 
+            background: -webkit-repeating-linear-gradient(#fff 0px,#fff 29px,#f00 30px); width: 80%; height: 500px;
             line-height: 30px;
         }
-    </style>
-    <script>
 
-    </script>
+    </style>
+	
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
 </head>
 <body>
-    <div class="bd">
-        <h1>F-Christina.github.io</h1>
-        <h2>信纸</h2>
-        <a href="css_list.html">&lt;返回css页面</a>
-        <a href="index.html">&lt;返回首页</a>
+<div class="article">
+    <div class="head">
+        <h1><a href="/" class="name">柠檬</a><a href="index.html" class="home">F-Christina.github.io</a></h1>
     </div>
-    <div class="paper"  contenteditable="true">
-        
+    <div class="main">
+        <div class="left">
+            <h2>css3制写出信纸效果</h2>
+            <!-- <p>css3 的一些特效css3 的一些特效css3 的一些特效css3 的一些特效</p> -->
+            <div class="paper"  contenteditable="true">
+                <span>请输入文字</span>
+            </div>
+        </div>
+        <div class="right">
+            <h2>介绍</h2>
+            <p>
+                1> 利用contenteditable="true" ，让标签变成可编辑状态。<br>
+                2> 运用重复渐变 -webkit-repeating-linear-gradient，写出信纸效果。
+            </p>
+        </div>
     </div>
+</div>
 </body>
 </html>
-
-
-
-

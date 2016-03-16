@@ -22,7 +22,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 }
 /*------ HEADERBG STARTS---------*/
 .headerbg{
-	background: url(../images/bannerbg.png);
+	background: url(../images/bannerbg.jpg);
 	min-height:700px;
 	width:100%;
 	background-size:cover;

@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <style>
+    /* 娇艳开始 */
+    .fl{float: left;}
+    .fr{float: right;}
+    .ago_header_bg{background: #f5f5f5;}
+    .ago_header{width: 1190px;margin:0 auto;padding:12px 0px;height: 11px;border-bottom: 1px solid #eee;}
+    .ago_header_l a{color:#6c6c6c; float: left;margin-right: 20px;}
+    .ago_header ul a{color: #6c6c6c;}
+    .ago_header_l .orange{color: #f22e00;margin-right: 7px;}
+    .ago_header ul li{float: left;margin-right: 12px;background: url(img/ago_down.png)no-repeat right center;padding-right: 16px;}
+    .ago_header ul .ago_car{background: url(img/ago_card.png)no-repeat right center;}
+    .ago_car i{width: 12px;height: 11px;background: url(img/ago_car.png) no-repeat left top;display: inline-block;margin-right: 6px;}
+    .ago_col{width: 12px;height: 10px;background: url(img/ago_col.png)no-repeat left top;display: inline-block;margin-right: 6px;}
+    .ago_header ul .ago_item{padding-right: 21px;border-right: 1px solid #e3dde3;background: none;margin-right: 13px;}
+    .ago_header ul .ago_kf{background: none;}
+    .ago_car b{width: 8px;height: 8px;background: url(img/ago_nav.png)no-repeat left top;display: inline-block;margin-right: 6px;}
+    .ago_banner{background: url(img/ago_banner.png)repeat-x center 0;height: 40px;}
+    .ago_sr{width: 1190px;margin:0 auto;margin-bottom: 6px; height: 130px;}
+    .ago_logo{text-indent: -999em;background: url(img/logo.png)no-repeat left top;height: 70px;margin-top: 35px;width: 250px;cursor: pointer;}
+    .ago_search{margin-top: 35px;}
+    .ago_search_t i{float: left;color: #3c3c3c;width: 50px;height: 25px;text-align: center;line-height: 25px;}
+    .ago_search_t .act{color: #fff;background: #ff5500;}
+    .ago_search_mm{width: 716px;height: 34px;border:3px solid #ff5500;}
+    .ago_search_mm .text{height: 34px;border:none;text-indent: 31px;background: url(img/ago_s.png) no-repeat 12px center;width:618px; }
+    .ago_search_mm .sub{height: 34px;width: 98px;background:#f50;border:none;color: #fff;cursor: pointer;}
+    .ago_search_m p{width: 24px;margin-left: 15px;float: left;color: #6c6c6c;line-height: 19px;}
+    .ago_search_b a{float: left;margin-right: 9px;margin-top: 9px;color: #6c6c6c;}
+    .ago_search_b .ago_r{color: #f40;}
+    .ago_search_b{width: 720px;}
+    .ago_search_b p{float: right;width: 39px;height: 18px;border:1px solid #e8e8e8;text-indent: center;line-height: 18px;background: url(img/ago_more.png) no-repeat 32px center;margin-top: 4px;color: #6c6c6c;text-indent: 5px;}
+    .ago_code{margin-top: 15px;}
+    .ago_x{border:1px solid #e8e8e8;background: url(img/ago_x.png)no-repeat;width: 18px;height: 18px;border-right: none;}
+    .ago_co{border:1px solid #e8e8e8;width: 94px;height: 105px;padding-top: 9px;color: #ff4400;text-align: center;}
+    .hide{display: none;}
+    .ago_hot{width: 1171px;margin:0 auto;border:1px solid #e8e8e8;background: #f5f5f5;height: 61px;padding:13px 0px 0px 17px;}
+    .ago_hot div{width: 277px;}
+    .ago_hot h3{width: 38px;border-right: 1px solid #e8e8e8;position: relative;font-size: 14px;color: #3c3c3c;line-height: 18px;padding-top: 2px;padding-bottom: 4px;margin-right: 14px;float: left;font-weight: bold;}
+    .ago_hot h3 i{position: absolute;right:-7px;top:13px;background: url(img/ago_j2.png)no-repeat ;width: 7px;height: 13px;}
+    .ago_hot div a{margin-right: 16px;float: left;line-height: 20px;color: #3c3c3c;}
+    .ago_hot .ago_last{position: relative;border-right: 1px solid #e8e8e8;padding-right: 11px;}
+    .ago_hot .ago_last p{position: absolute;right: 0px;top:-1px;background: url(img/ago_zb.png)no-repeat;width: 107px;height: 46px;}
+    .ago_hot .ago_ll{width: 317px;position: relative;height: 69px;}
+    .ago_hot .ago_pic{background: url(img/ago_pic.png)no-repeat ;position: absolute;left: 0px;top:-18px;width: 228px;height: 69px;}
+    .ago_hot .ago_lg{width: 56px;height: 27px;background: url(img/ago_z.png) no-repeat;position: absolute;top:-14px;right: 32px;}
+        /* 娇艳结束 */
+    /* 子华开始 */
+    .s_main{width:1190px;margin:0 auto;margin-bottom: 15px;}
+    .s_main_l{width:188px;border:1px solid #ff4400;float:left;}
+    .s_main_r{width:990px;float:right;}
+    .s_main_lt{height:34px;line-height:34px;padding-left:14px;font-weight:bold;color:#fff;background:#ff4400;font-size:16px;}
+    .s_zt{padding-top:9px;padding-left:9px;background:url(img/s_1.png) no-repeat 9px 9px;padding-right:8px;margin-bottom:8px;}
+    .s_zt span{font-size:14px;color:#3c3c3c;font-weight:bold;float:left;background:url(img/s_1.png) no-repeat left top;padding-left:32px;line-height:22px;}
+    .s_zt a{width:39px;height:18px;border:1px solid #e8e8e8;padding-top:5px;padding-left:5px;color:#3c3c3c;background:url(img/s_2.png) no-repeat 32px 6px;float:right;}
+    .s_main_lb{padding-left:14px;padding-bottom:2px;border-bottom:1px solid #e6e7eb;}
+    .s_main_lb a{color:#3c3c3c;float:left;margin-right:21px;margin-bottom:12px;font-size: 12px;height: 12px;}
+    .s_bottom{border-bottom:none;}
+    .s_main_rt{padding-top:10px;padding-bottom:8px;border-bottom:2px solid #ff4400;font-weight:bold;margin-bottom:10px;}
+    .s_tllist{float:left;padding-left:25px;}
+    .s_tllist li{float:left;margin-right:31px;}
+    .s_tllist a{color:#f40;font-size:16px;}
+    .s_main_rt i{width:1px;height:16px;background:url(img/s_3.png) no-repeat left center;float:left;margin-right:2px;}
+    .s_trlist{float:left;}
+    .s_trlist li{float:left;margin-left:28px;position:relative;}
+    .s_trlist a{color:#3c3c3c;font-size:16px;}
+    .s_trlist li b{width:81px;height:17px;background:url(img/s_4.png);display:inline-block;position:absolute;left:65px;top:0;}
+    .xiao{color:#3c3c3c;font-size:12px;float:right;padding-top:6px;}
+    .s_bllist{width:690px;float:left;}
+    .s_bllist li{float:left;}
+    .s_main_br{width:290px;float:right;border-top:1px solid #e8e8e8;}
+    .s_rtlist li{width:56px;border-bottom:1px solid #e8e8e8;border-left:1px solid #f7f7f7;
+    border-right:1px solid #f7f7f7;background:#f7f7f7;text-align:center;float:left;}
+    .s_rtlist li a{color:#3c3c3c;line-height:26px;}
+    .s_rtlist .active{background:#fff;border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;border-bottom:1px solid #fff;}
+    .s_rtlist .active a{font-weight:bold;}
+    .s_rtlist .s_right{border-right:1px solid #e8e8e8;}
+    .s_my{height:37px;padding:17px 10px;border-left:1px solid #e8e8e8;border-right:1px solid #e8e8e8;}
+    .s_my a{float:left;margin-right:14px;color:#3c3c3c;margin-bottom:13px;}
+    .s_my .s_frist{color:#f40;}
+    .s_my .s_last{margin-bottom:0px;}
+    .s_hi{width:288px;height:120px;border:1px solid #e8e8e8;background:url(img/s_11.png) no-repeat;}
+    .s_hi a{float:left;}
+    .s_ling{margin-top:43px;color:#f55732;margin-left:110px;margin-right:21px;}
+    .s_hui{margin-top:43px;color:#f55732;}
+    .s_deng{margin-top:32px;color:#fff;margin-left:61px;margin-right:45px;}
+    .s_mian{margin-top:32px;color:#fff;margin-right:33px;}
+    .s_mian1{margin-top:32px;color:#fff;}
+    .s_box{width:262px;height:248px;border:1px solid #eeeeee;background:#f4f4f4;padding:10px 14px 0px 12px;margin:0 auto;}
+    .s_box h3{font-size:14px;font-weight:bold;margin-bottom:10px;}
+    .s_hlist li{width:58px;height:65px;color:#9c9c9c;background:url(img/s_12.png) no-repeat;text-align:center;float:left;margin-right:10px;margin-bottom:10px;}
+    .s_hlist{margin-right:-10px;}
+    .s_hlist li a{width:58px;display:inline-block;margin-top:41px;color:#9c9c9c;height:20px;}
+    .s_hlist li .jiao{background:url(img/s_13.png) no-repeat center 14px;}
+    /* 子华开始 */
+
+
+     /*wuhuiqin*/
+    .three{ width:1190px; margin:0 auto;}
+    .W-box{float: left;}
+    .W-box .W-box-fist{ width:880px;}
+    .W-boxsmall{ width:435px; border-bottom: 1px solid #e8e8e8; float:left; margin-right:10px;}
+    .W-box-logo{ width:435px; height:25px; background:#f5619c; float:left;}
+    .W-box-logo-a{ float:left; width:71px; height:24px;background:url(img/W-pic3.png) no-repeat; text-indent:-999em; margin-left:14px;margin-right:24px;}
+    .W-box-logo-i{ float:left; width:122px; height:24px; background:url(img/W-pic2.png) no-repeat;}
+    .W-box-logo-div{ float:left; height:24px; margin-left:84px;}
+    .W-box-logo-div a{height:10px; font-size:12px; color:#fff; font-family:'微软雅黑'; border-right:1px solid #fbb7d2; padding-right:5px; position:relative;top:3px;}
+    .W-box-logo-div .W-box-logo-a1{ border-right:none;}
+    .W-box-r{ float:right;}
+    .W-box-l{ float:left;}
+    .W-box-l-top{ float:left; width:300px; padding:13px 0px 3px 15px; border-left:1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8;}
+    .W-box-l-top a{ float:left; font-size:12px; padding-right:13px; height:26px; line-height:26px;}
+    .W-box-l-top .W-box-l-top-a{ font-weight:bold;}
+    .W-box-l .W-box-l-bottom{ padding-top:0px; border-bottom:none;}
+    .W-box-fist .W-boxsmall2{ margin-right:0;}
+    .W-box-fist2{ margin-top:20px; margin-bottom:20px;}
+    .W-box .W-pic{ width:880px; height:70px; background:url(img/W-pic4.jpg) no-repeat; margin-bottom:23px;}
+    .W-box-fist3{ margin-top:20px;}
+    
+    /*wuhuiqin*/  
+
+    /* 侧边栏 */
+    .find{float:right;width:256px;background:#F5F5F5;padding-left:15px;padding-right:15px;border:1px solid #e8e8e8;}
+            .find h5{font:16px "microsoft yahei";background:url(img/cy_find_ico.png) 0 8px no-repeat;text-indent:20px;height: 36px;line-height: 36px;}
+        
+            .list{width:260px;}
+            .list{border-top:1px solid #e8e8e8;border-left:1px solid #e8e8e8;}
+            .list li{width:224px;border-bottom:1px solid #e8e8e8;border-right:1px solid #e8e8e8;padding:15px;background:#ffffff;}
+            .list h6{color:#444444;margin-bottom: 15px;}
+            .list li i{display: block;}
+            .list .hot{color:#444444;margin-bottom: 35px;}
+            .list .count{color:#737373;}
+            .list .pic {float:left;}
+            .list .pics{float:left;}
+            .list .txt{float:right;width:100px;margin-bottom:15px;}
+            .list .nine{margin-bottom: 9px;}
+            .list .f5{display:block;background:url(img/f5.png) 65px 0 no-repeat;text-align: center;}
+            .list .name{text-indent: -74px;}
+    /* 侧边栏 */
+
+
+
+
+    /* 王翠 */
+    /*一部分开始*/
+.w_box{ width:1190px; height:264px; border:1px solid #e8e8e8; margin:0 auto;}
+.w_hc{ width:394px; height:264px; float:left; border-right:1px solid #e8e8e8;}
+.w_hc_hc{ width:370px; height:224px;margin:0 auto; margin-top:25px; position:relative;}
+.w_hc_hc .w_h3{ width:44px; height:21px; background:url(img/%E6%B1%87%E5%90%83.png) no-repeat; text-indent:-999em; padding-bottom:8px;}
+.w_hc_hc .w_li{ float:left;}
+.w_hc_hc h4{ padding-top:4px; padding-bottom:12px; padding-left:100px;}
+.w_a{ position:absolute; top:30px; left:154px; background:#db6118; color:#FFF; width:30px; height:24px; text-align:center; line-height:24px;}
+.w_a2{ position:absolute; top:30px; right:0px;width:30px; height:24px; text-align:center; line-height:24px; color:#FFF; background:#b92c34;}
+.w_Bg{ width:394px; height:264px; float:left; border-right:1px solid #e8e8e8;}
+.w_Bg_l{ padding-top:28px; padding-left:12px; float:left;}
+.w_Bg_l .w_h3{ width:58px; height:20px; background:url(img/b%E6%A0%BClogo.png) no-repeat; text-indent:-999em; padding-bottom:10px;}
+.w_Bg_r{ float:right; padding-right:12px; width:96px; text-align:center;}
+.w_Bg_r .w_h4{ padding-top:27px; font-size:14px; padding-bottom:27px;}
+.w_Bg_r .p1{ padding-bottom:16px;}
+.w_Bg_r .p6{ height:32px; background:#ff4400; line-height:32px; margin-top:12px;}
+.w_es{ width:182px;float:left; border-right:1px solid #e8e8e8; padding-left:14px; padding-top:20px;}
+.w_h2{ padding-bottom:10px;}
+.w_es_donw{ margin-top:12px;}
+.w_zc{ float:left; padding-top:26px; padding-left:14px;}
+.w_zc_donw .w_li{ float:left;}
+.w_zc_up h3{ padding-bottom:12px;}
+.w_zc_up h5{ padding:10px 0px;}
+.w_li img{ padding-bottom:10px;}
+.w_li1{ margin-right:12px;}
+/*一部分结束*/
+/*二部分开始*/
+.wrm_nav{ width:1190px; margin:0 auto; margin-top:10px;}
+.wh2{ float:left; font-size:20px; font-weight:bold; padding-top:22px;}
+.wul{ float:right; padding-top:22px;}
+.wul .wli{ float:left; border-right:1px solid #e8e8e8; padding:0px 12px;}
+.wdp{ width:1190px;margin:0 auto; border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8; margin-top:8px;}
+.wdp_l_l{ float:left; width:240px; padding-left:10px;}
+.wdp_l_r{ float:left; width:342px;}
+.wdp_l_r .wli2{ float:left;}
+.wdp_l_l h5{ font-size:20px; font-weight:bold; padding-bottom:6px;}
+.wdp_l_l h5 a{ color:#ff4400;}
+.wdp_l_r h6{font-size:16px; font-weight:bold;}
+.wdp_l_r h6 a{ color:#ff4400;}
+/*二部分结束*/
+    /* 王翠 */
+
+   /*  薛丰仪开始 */
+    /* 星店开始 */
+        .x_star{width: 1190px; margin: 0 auto 18px; border: 1px solid #e8e8e8;}
+        .x_star li{width: 197px; border-right: 1px solid #e8e8e8; float: left;}
+        .x_star .x_mlast{border-right: none;}
+        .x_ltop{padding-top: 14px; margin-bottom: 13px;}
+        .x_lttit h5{float: left; font-size: 16px; font-weight: bold; margin: 0 53px 12px 14px;}
+        .x_lttit i{float: left; color: #9c9c9c;}
+        .x_lcon{width: 169px; text-align: center; background: #f5f5f5; padding-bottom: 8px;margin-left: 14px;}
+        .x_lcon img{margin-bottom: 9px;}
+        .x_lcon h6{color: #3d3c3c; font-weight: bold; margin-bottom: 7px;}
+        .x_lcon p a{color: #9c9c9c;}
+        .x_lbottom{text-align: center;}
+        .x_lb_pic{float: left; margin-right: 11px; margin-left: 20px;}
+        .x_lb_pic1{float: left; margin-right: 26px;}
+        .x_lbtop a{color: #3c3c3c; line-height: 27px;}
+        .x_ldis{border:1px solid #e8e8e8 ; width: 167px; margin-left: 14px; position: relative;}
+        .x_lmbot a i{color: #e1e1e4;}
+        .x_lmbot a b{color: #ff4400;}
+        .x_lmbcon span{color: #e1e1e1;}
+        .x_ldis_tit{float: left; margin-top: 27px; margin-left: 15px;}
+        .x_ldis_tit h6{margin-bottom: 6px; font-weight: bold; font-size: 14px;}
+        .x_ldis_tit p{color: #767676;}
+        .x_ldis a{float: right;  padding: 8px 0; margin-right: 9px;}
+        .x_ldis i{width: 34px; height: 33px; background: url(img/x_ico.png) no-repeat -34px 0; position: absolute; top: 0px; left: 0px;}
+         /* 星店结束 */
+       
+        /* 爱逛街开始 */
+        .x_loshop{width: 1190px; margin: 0 auto 18px;}
+        .x_loshop h3{font-size: 17px; font-weight: bold; margin-bottom: 17px;}
+        .x_locon_l{float: left;}
+        .x_locon_l li{position: relative; margin-right: 10px; float: left;}
+        .x_locon_l li div{width: 110px; height: 25px; background: #fff; position: absolute; bottom: 10px; left: 12px;}
+        .x_locon_l li div a{color: #3c3c3c; line-height: 25px; margin-left: 7px;}
+        .x_lo_rtop{border-bottom: 1px solid #e3e3e3; margin-bottom: 16px; position: relative;}
+        .x_lo_rtop h6{float: left; font-size: 15px; font-weight: bold; margin-bottom: 9px;}
+        .x_lo_rtop .x_lo_more{float: right; width: 34px; height: 16px; line-height: 16px;border: 1px solid #e8e8e8; padding-left: 5px;}
+        .x_lo_rtop i{width: 3px; height: 6px; background: url(img/x_ico.png) no-repeat 0 0; position: absolute; top: 6px; right: 4px;}
+        .x_lo_rle{float: left; position: relative;}
+        .x_lo_rrig{float: right;}
+        .x_locon_r{float: left;}
+        .x_lo_rle img{margin:0 36px 6px 30px;}
+        .x_lo_rle h6{text-align: center; font-weight: bold;}
+        .x_lo_rle i{width: 8px; height: 13px; background: url(img/x_ico.png) no-repeat -7px 0; position: absolute; left: 13px; top: 48%;}
+        .x_lo_rle b{width: 8px; height: 14px; background: url(img/x_ico.png) no-repeat -22px 0; position: absolute; right: 19px; top: 48%;}
+        .x_lo_rrig li a{line-height: 24px;}
+         /* 爱逛街结束 */
+
+         /* 薛丰仪结束 */
+
+
+    
+            
+
+    .cy_w{width: 1190px;margin:50px auto;}
+    .footer{width:1190px;padding:30px 25px;border-top:1px solid #e8e8e8;border-bottom:2px solid #ff5400;}
+            
+    .footer .item{width:211px;padding-left:25px;padding-right:60px;float: left;border-right:1px solid #e8e8e8;word-spacing:14px;}
+    .footer .bnone{border-right:none ;}
+    .footer .tit{width:100%;float；left;font:bold 16px '黑体';color:#2b2b2b;height: 40px;line-height: 40px;text-indent:3px;margin-bottom：9px;}
+    .footer span a{height:21px;font:12px/21px '宋体';color:#9c9c9c;}
+    .ico1{float:left;display:block;width:40px;height:40px;background:url(img/cy_ico1.png) no-repeat;}  
+    .ico2{float:left;display:block;width:40px;height:40px;background:url(img/cy_ico2.png) no-repeat;}
+    .ico3{float:left;display:block;width:40px;height:40px;background:url(img/cy_ico3.png) no-repeat;}
+    .ico4{float:left;display:block;width:40px;height:40px;background:url(img/cy_ico4.png) no-repeat;}
+    .links{width:1088px;height:70px;line-height:30px;float:left;margin-bottom: 10px;padding-right:150px;border-bottom:1px solid #6c6c6c;}
+    .links a{color:#6c6c6c;padding:0 8px;border-right: 1px solid #6c6c6c;}
+    .links .nopading{padding-left:0;}
+    .links .bnone{border-right:none;}
+    .line{border:1px solid #6c6c6c;}
+    .links2{width:1190px;}
+    .links2 a{color:#6c6c6c;margin-right: 8px;float:left;}  
+
+
+    </style>
+    <script src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.ago_x').click(function(){
+            $('.ago_code').css('display','none');
+        })
+    })
+</script>
+</head>
+<body>
+    <!-- header -->
+    <div class="ago_header_bg">
+        <div class="ago_header clearfix">
+            <div class="ago_header_l fl">
+                <a href="#" class="orange">亲，请登录</a>
+                <a href="#">免费注册</a>
+                <a href="#">手机逛淘宝</a>
+            </div>
+            <ul class="fr">
+                <li><a href="#">我的淘宝</a></li>
+                <li class="ago_car"><i></i><a href="#">购物车</a></li>
+                <li><i class="ago_col"></i><a href="#">收藏夹</a></li>
+                <li class="ago_item"><a href="#">商品分类</a></li>
+                <li><a href="#">卖家中心</a></li>
+                <li class="ago_kf"><a href="#">联系客服</a></li>
+                <li class="ago_car"><b></b><a href="#">网站导航</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ago_banner"></div>
+    <div class="ago_sr clearfix">
+        <h1 class="ago_logo fl"><a href="#">淘宝网</a></h1>
+        <div class="ago_search fl">
+            <div class="ago_search_t clearfix">
+                <i class="act">宝贝</i>
+                <i>天猫</i>
+                <i>店铺</i>
+            </div>
+            <div class="ago_search_m clearfix">
+            <div class="ago_search_mm fl">
+                <input type="text" placeholder="找个小帮手哈哈哈哈" class="fl text" />
+                <input type="submit" value="搜索" class="fr sub" />
+                
+            </div><p class="fr">高级搜索</p></div>
+            <div class="ago_search_b clearfix">
+                <a href="#">雪地靴</a>
+                <a href="#" class="ago_r">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <a href="#">雪地靴</a>
+                <p>更多</p>
+            </div>
+        </div>
+        <div class="ago_code fr">
+            <div class="ago_x fl"></div>
+            <div class="ago_co fl">
+                手机逛淘宝
+                <img src="img/ago_code.png" />
+            </div>
+        </div>
+    </div>
+<!-- header -->
+<div class="s_main clearfix">
+    <div class="s_main_l">
+        <h3 class="s_main_lt">淘宝特色服务</h3>
+        <h4 class="s_zt clearfix"><span>主题市场</span><a href="#">更多</a></h4>
+        <div class="s_main_lb clearfix">
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+        </div>
+        <h4 class="s_zt clearfix"><span>主题市场</span><a href="#">更多</a></h4>
+        <div class="s_main_lb clearfix">
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+        </div>
+        <h4 class="s_zt clearfix"><span>主题市场</span><a href="#">更多</a></h4>
+        <div class="s_main_lb clearfix">
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+        </div>
+        <h4 class="s_zt clearfix"><span>主题市场</span><a href="#">更多</a></h4>
+        <div class="s_main_lb clearfix s_bottom">
+            <a href="#">淘宝女人</a><a href="#">运动派</a><a href="#">情侣</a>
+        </div>
+    </div>
+    <div class="s_main_r">
+        <div class="s_main_rt clearfix">
+            <ul class="s_tllist clearfix">
+                <li><a href="#">天猫</a></li>
+                <li><a href="#">聚划算</a></li>
+                <li><a href="#">超市</a></li>
+            </ul>
+            <i></i>
+            <ul class="s_trlist clearfix">
+                <li><a href="#">阿里旅行</a></li>
+                <li><a href="#">司法拍卖</a></li>
+                <li><a href="#">一淘</a></li>
+                <li><a href="#">电器城</a></li>
+                <li><a href="#">美女闪购</a></li>
+                <li><a href="#">云智能</a></li>
+                <li><a href="#">特色中国<b></b></a></li>
+            </ul>
+            <a href="#" class="xiao">消费者保障</a>
+        </div>
+        <ul class="s_bllist clearfix">
+            <li><img src="img/s_5.jpg"/></li>
+            <li><img src="img/s_6.jpg"/></li>
+            <li><img src="img/s_7.jpg"/></li>
+            <li><img src="img/s_8.jpg"/></li>
+            <li><img src="img/s_9.jpg"/></li>
+            <li><img src="img/s_10.jpg"/></li>
+        </ul>
+        <div class="s_main_br">
+            <ul class="s_rtlist clearfix">
+                <li class="active"><a href="#">公告</a></li>
+                <li><a href="#">规则</a></li>
+                <li><a href="#">论坛</a></li>
+                <li><a href="#">安全</a></li>
+                <li class="s_right"><a href="#">公益</a></li>
+            </ul>
+            <div class="s_my">
+                <a href="#" class="s_frist">马云引爆香港创业激情</a>
+                <a href="#">马云引爆香港创业激情</a>
+                <a href="#" class="s_last">马云引爆香港创业激情</a>
+                <a href="#" class="s_last">马云引爆香港创业激情</a>
+            </div>
+            <div class="s_hi">
+                <a href="#" class="s_ling">领淘金币抵钱</a>
+                <a href="#" class="s_hui">会员俱乐部</a>
+                <a href="#" class="s_deng">登录</a>
+                <a href="#" class="s_mian">免费注册</a>
+                <a href="#" class="s_mian1">免费开店</a>
+            </div>
+            <div class="s_box">
+                <h3>便民服务</h3>
+                <ul class="s_hlist clearfix">
+                    <li><a href="#" class="jiao">话费</a></li>
+                    <li><a href="#" class="jiao">话费</a></li>
+                    <li><a href="#" class="jiao">话费</a></li>
+                    <li><a href="#" class="jiao">话费</a></li>
+                    <li><a href="#">话费</a></li>
+                    <li><a href="#">话费</a></li>
+                    <li><a href="#">话费</a></li>
+                    <li><a href="#">话费</a></li>
+                    <li><a href="#">话费</a></li>
+                    <li><a href="#">话费</a></li>
+                    <li><a href="#">话费</a></li>
+                    <li><a href="#">话费</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="ago_hot clearfix">
+        <div class="fl ">
+            <h3>当前热点<i></i></h3>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+        </div>
+        <div class="fl ">
+            <h3>当前热点<i></i></h3>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+        </div>
+        <div class="fl ago_last">
+            <h3>当前热点<i></i></h3>    
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+            <a href="#">过年必穿</a>
+           <a href="#">过年必穿</a>
+            <p></p>
+        </div>
+        <div class="fl ago_ll">
+            <div class="ago_pic"></div>
+            <div class="ago_lg"></div>
+        </div>
+    </div>
+
+   <!--  头部结束 -->
+
+
+    <!-- wuhuiqin -->
+   
+
+    <div class="three clearfix">
+        <div class="W-box">
+    
+         <div class="W-box-fist clearfix">
+         <div class="W-boxsmall">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic1.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-mid ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+         <div class="W-boxsmall W-boxsmall2 ">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic1.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-mid ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        </div>
+        
+        
+    <div class="W-box-fist clearfix W-box-fist2">
+        <div class="W-boxsmall">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="W-boxsmall W-boxsmall2 ">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+      
+    <div class="W-pic"></div>
+    
+     <!--1-->
+    
+     <div class="W-box-fist clearfix W-box-fist2 ">
+        <div class="W-boxsmall">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="W-boxsmall W-boxsmall2 ">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    <div class="W-box-fist clearfix W-box-fist2">
+        <div class="W-boxsmall  W-box-fist3">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="W-boxsmall W-boxsmall2 W-box-fist3">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+      
+    <div class="W-pic"></div>
+    </div> 
+     <!--2-->
+    
+     <div class="W-box-fist clearfix W-box-fist2 ">
+        <div class="W-boxsmall">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="W-boxsmall W-boxsmall2 ">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    <div class="W-box-fist clearfix W-box-fist2">
+        <div class="W-boxsmall  W-box-fist3">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="W-boxsmall W-boxsmall2 W-box-fist3">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+      
+    <div class="W-pic"></div>
+    </div>
+     <!--3-->
+    
+     <div class="W-box-fist clearfix W-box-fist2 ">
+        <div class="W-boxsmall">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="W-boxsmall W-boxsmall2 ">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    <div class="W-box-fist clearfix W-box-fist2">
+        <div class="W-boxsmall  W-box-fist3">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="W-boxsmall W-boxsmall2 W-box-fist3">
+            <h1 class="W-box-logo">
+                <a href="#" class="W-box-logo-a">女装.男装</a>
+                <i class="W-box-logo-i"></i>
+                <div class="W-box-logo-div">
+                    <a href="#">百变毛呢</a>
+                    <a href="#" class="W-box-logo-a1">男装好货</a>
+                </div>
+            </h1>
+            
+            <div class="W-box-l">
+                <a href="#" class="W-box-r">
+                    <img src="img/W-pic5.jpg">
+                </a>
+                <div class="W-box-l-top">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                <div class="W-box-l-top W-box-l-bottom ">
+                    <a href="#" class="W-box-l-top-a">潮流女装</a>
+                    <a href="#">春上新</a>
+                    <a href="#">韩版</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                    <a href="#">春上新</a>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+      
+    <div class="W-pic"></div>
+    
+     <!--4-->
+     
+  </div>
+
+    </div>
+
+        <div class="find">
+            <h5>发现好货</h5>
+            <ul class="list">
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_find.png" /></a>
+                    <div class="txt">
+                        <h6>精品小旅游</h6>
+                        <i class="hot">斤7天同城热销</i>
+                        <i class="count">已销售5000件</i>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_find.png" /></a>
+                    <div class="txt">
+                        <h6>精品小旅游</h6>
+                        <i class="hot">斤7天同城热销</i>
+                        <i class="count">已销售5000件</i>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_find.png" /></a>
+                    <div class="txt">
+                        <h6>精品小旅游</h6>
+                        <i class="hot">斤7天同城热销</i>
+                        <i class="count">已销售5000件</i>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_find.png" /></a>
+                    <div class="txt">
+                        <h6>精品小旅游</h6>
+                        <i class="hot">斤7天同城热销</i>
+                        <i class="count">已销售5000件</i>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_find.png" /></a>
+                    <div class="txt">
+                        <h6>精品小旅游</h6>
+                        <i class="hot">斤7天同城热销</i>
+                        <i class="count">已销售5000件</i>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_find.png" /></a>
+                    <div class="txt">
+                        <h6>精品小旅游</h6>
+                        <i class="hot">斤7天同城热销</i>
+                        <i class="count">已销售5000件</i>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_find.png" /></a>
+                    <div class="txt">
+                        <h6>精品小旅游</h6>
+                        <i class="hot">斤7天同城热销</i>
+                        <i class="count">已销售5000件</i>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_find.png" /></a>
+                    <div class="txt">
+                        <h6>精品小旅游</h6>
+                        <i class="hot">斤7天同城热销</i>
+                        <i class="count">已销售5000件</i>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img class="nine" src="img/cy-9.png" /></a>
+                    <a href="#" class="f5">换一批试试</a>
+                </li>
+            </ul>
+            <h5>发现好店</h5>
+            <ul class="list">
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_icoyy.png" /></a>
+                    <i class="txt name">
+                        <a href="#">喜洋洋糖果</a>
+                        <i>主营：食品/保健</i>
+                        <i>售后不错 | 快递服务好 | 甜蜜</i>
+                    </i>
+                    <i class="pics">
+                        <a href="#"><img src="img/cy_shop_pic.png" /></a>
+                        <a href="#"><img src="img/cy_shop_pic.png" /></a>
+                        <a href="#"><img src="img/cy_shop_pic.png"/></a>
+                    </i>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_icoyy.png" /></a>
+                    <i class="txt name">
+                        <a href="#">喜洋洋糖果</a>
+                        <i>主营：食品/保健</i>
+                        <i>售后不错 | 快递服务好 | 甜蜜</i>
+                    </i>
+                    <i class="pics">
+                        <a href="#"><img src="img/cy_shop_pic.png" /></a>
+                        <a href="#"><img src="img/cy_shop_pic.png" /></a>
+                        <a href="#"><img src="img/cy_shop_pic.png"/></a>
+                    </i>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_icoyy.png" /></a>
+                    <i class="txt name">
+                        <a href="#">喜洋洋糖果</a>
+                        <i>主营：食品/保健</i>
+                        <i>售后不错 | 快递服务好 | 甜蜜</i>
+                    </i>
+                    <i class="pics">
+                        <a href="#"><img src="img/cy_shop_pic.png" /></a>
+                        <a href="#"><img src="img/cy_shop_pic.png" /></a>
+                        <a href="#"><img src="img/cy_shop_pic.png"/></a>
+                    </i>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_icoyy.png" /></a>
+                    <i class="txt name">
+                        <a href="#">喜洋洋糖果</a>
+                        <i>主营：食品/保健</i>
+                        <i>售后不错 | 快递服务好 | 甜蜜</i>
+                    </i>
+                    <i class="pics">
+                        <a href="#"><img src="img/cy_shop_pic.png" /></a>
+                        <a href="#"><img src="img/cy_shop_pic.png" /></a>
+                        <a href="#"><img src="img/cy_shop_pic.png"/></a>
+                    </i>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_icoyy.png" /></a>
+                    <i class="txt name">
+                        <a href="#">喜洋洋糖果</a>
+                        <i>主营：食品/保健</i>
+                        <i>售后不错 | 快递服务好 | 甜蜜</i>
+                    </i>
+                </li>
+                <li class="clearfix">
+                    <a href="#" class="pic"><img src="img/cy_icoyy.png" /></a>
+                    <i class="txt name">
+                        <a href="#">喜洋洋糖果</a>
+                        <i>主营：食品/保健</i>
+                        <i>售后不错 | 快递服务好 | 甜蜜</i>
+                    </i>
+                </li>
+            </ul>
+        </div>
+    </body>
+    </div>
+    
+
+
+    
+
+
+
+
+
+    <!-- 薛丰仪开始 -->
+    <!-- 星店开始 -->
+    <ul class="x_star clearfix">
+        <li>
+            <div class="x_ltop">
+                <div class="x_lttit clearfix">
+                    <h5>星店</h5>
+                    <i>明星开店在这里</i>
+                </div>
+                <div class="x_lcon">
+                    <a href="#"><img src="img/x_star.gif" /></a>
+                    <h6>众明星男神 晒同款卫衣</h6>
+                    <p>
+                        <a href="#">林更新</a>
+                        <a href="#">吴尊</a>
+                        <a href="#">宁浩</a>
+                        <a href="#">徐峥</a>
+                    </p>
+                </div>
+            </div>
+            <div class="x_lbottom">
+                <div class="x_lbtop">
+                    <div class="x_lba clearfix">
+                        <div class="x_lb_pic">
+                            <a href="#"><img src="img/x_pic1.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                        <div class="x_lb_pic1">
+                            <a href="#"><img src="img/x_pic2.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                    </div>
+                    <p class="x_lmbcon">
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a>
+                    </p>
+                    <p class="x_lmbot">
+                        <a href="#"><i>[<b>0元星福利</b>]</i>人气明星店</a>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="x_ltop">
+                <div class="x_lttit clearfix">
+                    <h5>星店</h5>
+                    <i>明星开店在这里</i>
+                </div>
+                <div class="x_lcon">
+                    <a href="#"><img src="img/x_star.gif" /></a>
+                    <h6>众明星男神 晒同款卫衣</h6>
+                    <p>
+                        <a href="#">林更新</a>
+                        <a href="#">吴尊</a>
+                        <a href="#">宁浩</a>
+                        <a href="#">徐峥</a>
+                    </p>
+                </div>
+            </div>
+            <div class="x_lbottom">
+                <div class="x_lbtop">
+                    <div class="x_lba clearfix">
+                        <div class="x_lb_pic">
+                            <a href="#"><img src="img/x_pic1.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                        <div class="x_lb_pic1">
+                            <a href="#"><img src="img/x_pic2.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                    </div>
+                    <p class="x_lmbcon">
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a>
+                    </p>
+                    <p class="x_lmbot">
+                        <a href="#"><i>[<b>0元星福利</b>]</i>人气明星店</a>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="x_ltop">
+                <div class="x_lttit clearfix">
+                    <h5>星店</h5>
+                    <i>明星开店在这里</i>
+                </div>
+                <div class="x_lcon">
+                    <a href="#"><img src="img/x_star.gif" /></a>
+                    <h6>众明星男神 晒同款卫衣</h6>
+                    <p>
+                        <a href="#">林更新</a>
+                        <a href="#">吴尊</a>
+                        <a href="#">宁浩</a>
+                        <a href="#">徐峥</a>
+                    </p>
+                </div>
+            </div>
+            <div class="x_lbottom">
+                <div class="x_lbtop">
+                    <div class="x_lba clearfix">
+                        <div class="x_lb_pic">
+                            <a href="#"><img src="img/x_pic1.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                        <div class="x_lb_pic1">
+                            <a href="#"><img src="img/x_pic2.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                    </div>
+                    <p class="x_lmbcon">
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a>
+                    </p>
+                    <p class="x_lmbot">
+                        <a href="#"><i>[<b>0元星福利</b>]</i>人气明星店</a>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="x_ltop">
+                <div class="x_lttit clearfix">
+                    <h5>星店</h5>
+                    <i>明星开店在这里</i>
+                </div>
+                <div class="x_lcon">
+                    <a href="#"><img src="img/x_star.gif" /></a>
+                    <h6>众明星男神 晒同款卫衣</h6>
+                    <p>
+                        <a href="#">林更新</a>
+                        <a href="#">吴尊</a>
+                        <a href="#">宁浩</a>
+                        <a href="#">徐峥</a>
+                    </p>
+                </div>
+            </div>
+            <div class="x_lbottom">
+                <div class="x_lbtop">
+                    <div class="x_lba clearfix">
+                        <div class="x_lb_pic">
+                            <a href="#"><img src="img/x_pic1.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                        <div class="x_lb_pic1">
+                            <a href="#"><img src="img/x_pic2.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                    </div>
+                    <p class="x_lmbcon">
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a>
+                    </p>
+                    <p class="x_lmbot">
+                        <a href="#"><i>[<b>0元星福利</b>]</i>人气明星店</a>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="x_ltop">
+                <div class="x_lttit clearfix">
+                    <h5>星店</h5>
+                    <i>明星开店在这里</i>
+                </div>
+                <div class="x_lcon">
+                    <a href="#"><img src="img/x_star.gif" /></a>
+                    <h6>众明星男神 晒同款卫衣</h6>
+                    <p>
+                        <a href="#">林更新</a>
+                        <a href="#">吴尊</a>
+                        <a href="#">宁浩</a>
+                        <a href="#">徐峥</a>
+                    </p>
+                </div>
+            </div>
+            <div class="x_lbottom">
+                <div class="x_lbtop">
+                    <div class="x_lba clearfix">
+                        <div class="x_lb_pic">
+                            <a href="#"><img src="img/x_pic1.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                        <div class="x_lb_pic1">
+                            <a href="#"><img src="img/x_pic2.gif" /></a>
+                            <h6><a href="#">明星款唇膏</a></h6>
+                        </div>
+                    </div>
+                    <p class="x_lmbcon">
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a>
+                    </p>
+                    <p class="x_lmbot">
+                        <a href="#"><i>[<b>0元星福利</b>]</i>人气明星店</a>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li class="x_mlast">
+            <div class="x_ltop">
+                <div class="x_lttit clearfix">
+                    <h5>星店</h5>
+                    <i>明星开店在这里</i>
+                </div>
+                <div class="x_lcon">
+                    <a href="#"><img src="img/x_star.gif" /></a>
+                    <h6>众明星男神 晒同款卫衣</h6>
+                    <p>
+                        <a href="#">林更新</a>
+                        <a href="#">吴尊</a>
+                        <a href="#">宁浩</a>
+                        <a href="#">徐峥</a>
+                    </p>
+                </div>
+            </div>
+            <div class="x_lbottom">
+                <div class="x_lbtop">
+                    <div class="x_ldis clearfix">
+                        <div class="x_ldis_tit">
+                            <h6>特价航班</h6>
+                            <p>75元起飞</p>
+                        </div>
+                        <a href="#"><img src="img/x_pic5.gif" /></a>
+                        <i></i>
+                    </div>
+                    <p class="x_lmbcon">
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a><span>|</span>
+                        <a href="#">星护肤</a>
+                    </p>
+                    <p class="x_lmbot">
+                        <a href="#"><i>[<b>0元星福利</b>]</i>人气明星店</a>
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!-- 星店结束 -->
+
+    <!-- 爱逛街开始 -->
+    <div class="x_loshop">
+        <h3>爱逛街</h3>
+        <div class="x_locon clearfix">
+            <ul class="x_locon_l clearfix">
+                <li>
+                    <a href="#"><img src="img/x_pic3.gif"/></a>
+                    <div>
+                        <a href="#">超有质感毛毛短靴</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/x_pic3.gif"/></a>
+                    <div>
+                        <a href="#">超有质感毛毛短靴</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/x_pic3.gif"/></a>
+                    <div>
+                        <a href="#">超有质感毛毛短靴</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/x_pic3.gif"/></a>
+                    <div>
+                        <a href="#">超有质感毛毛短靴</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/x_pic3.gif"/></a>
+                    <div>
+                        <a href="#">超有质感毛毛短靴</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/x_pic3.gif"/></a>
+                    <div>
+                        <a href="#">超有质感毛毛短靴</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="x_locon_r">
+                <div class="x_lo_rtop clearfix">
+                    <h6>潮范儿十足！英伦风马丁靴</h6>
+                    <a href="#" class="x_lo_more">更多</a>
+                    <i></i>
+                </div>
+                <div class="x_lo_rbot clearfix">
+                    <div class="x_lo_rle">
+                        <i></i>
+                        <a href="#"><img src="img/x_pic4.gif"/></a>
+                        <b></b>
+                        <h6>气质修身小西装</h6>
+                    </div>
+                    <ul class="x_lo_rrig">
+                        <li>
+                            <a href="#">[宅家]超萌！软绵绵家居服</a>
+                        </li>
+                        <li>
+                            <a href="#">[宅家]超萌！软绵绵家居服</a>
+                        </li>
+                        <li>
+                            <a href="#">[宅家]超萌！软绵绵家居服</a>
+                        </li>
+                        <li>
+                            <a href="#">[宅家]超萌！软绵绵家居服</a>
+                        </li>
+                        <li>
+                            <a href="#">[宅家]超萌！软绵绵家居服</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 爱逛街结束 -->
+   <!--  薛丰仪结束 -->
+
+
+
+    <!--一部分开始-->
+    <div class="w_box clearfix">
+        <div class="w_hc">
+            <ul class="w_hc_hc clearfix">
+                <li class="w_li">
+                    <h3 class="w_h3">会吃</h3>
+                    <a href="#"><img src="img/huichi1.jpg" /></a>
+                    <a class="w_a">限量</a>
+                </li>
+                <li class="w_li">
+                    <h4 class="w_h4"><a href="#">挑遍天下美食</a></h4>
+                    <a href="#"><img src="img/huichi2.jpg" /></a>
+                    <a class="w_a2">特价</a>
+                </li>
+            </ul> 
+        </div>
+        <div class="w_Bg clearfix">
+            <div class="w_Bg_l">
+                <h3 class="w_h3">B格</h3>
+                <img src="img/B格.jpg" />
+            </div>
+            <div class="w_Bg_r">
+                <h4 class="w_h4"><a href="#">指尖上的BIG</a></h4>
+                <p class="p1"><a href="#">我家的烘焙坊</a></p>
+                <p class="p1"><a href="#">我家的烘焙坊</a></p>
+                <p class="p1"><a href="#">我家的烘焙坊</a></p>
+                <p class="p1"><a href="#">我家的烘焙坊</a></p>
+                <p><a href="#">我家的烘焙坊</a></p>
+                <p class="p6"><a href="#">执子之手与子偕老</a></p>
+            </div>
+        </div>
+        <div class="w_es">
+            <div class="w_es_up">
+                <h2 class="w_h2">二手<span>闲置转卖赚钱</span></h2>
+                <img src="img/ershou.jpg" />
+            </div>
+            <div class="w_es_donw">
+                <img src="img/biao.jpg" />
+                <a href="#">安娜苏汽水</a>
+            </div>
+        </div>
+        <div class="w_zc">
+            <div class="w_zc_up">
+                <h3>众筹<a href="#">做未来投资人</a></h3>
+                <a href="#"><img src="img/fj.jpg" /></a>
+                <h5>编写干洗机</h5>
+            </div>
+            <ul class="w_zc_donw clearfix">
+                <li class="w_li w_li1">
+                    <a href="#"><img src="img/sb.jpg" /></a>
+                    <p>77度智能水杯</p>
+                </li>
+                <li class="w_li">
+                    <a href="#"><img src="img/sb.jpg" /></a>
+                    <p>77度智能水杯</p>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+<!--一部分结束-->
+<!--二部分开始-->
+    <div class="wrm_nav clearfix">
+        <h2 class="wh2">热卖单品</h2>
+        <ul class="wul">
+            <li class="wli"><a href="#">男靴</a></li>
+            <li class="wli"><a href="#">休闲鞋</a></li>
+            <li class="wli"><a href="#">男靴</a></li>
+            <li class="wli"><a href="#">休闲鞋</a></li>
+            <li class="wli"><a href="#">男靴</a></li>
+            <li class="wli"><a href="#">休闲鞋</a></li>
+            <li class="wli"><a href="#">男靴</a></li>
+            <li class="wli"><a href="#">休闲鞋</a></li>
+            <li class="wli"><a href="#">男靴</a></li>
+            <li class="wli"><a href="#">休闲鞋</a></li>
+            <li class="wli"><a href="#">男靴</a></li>
+            <li class="wli"><a href="#">休闲鞋</a></li>
+            <li class="wli"><a href="#">休闲鞋</a></li>
+        </ul>
+    </div>
+    <div class="wdp clearfix">
+        <div class="wdp_l clearfix">
+            <div class="wdp_l_l">
+                <a href="#"><img src="img/kuzi.jpg" /></a>
+                <h5><a href="#">￥179.00</a></h5>
+                <i>月销量</i>
+                <p>特别有范，谁啊啊啊啊啊啊啊啊啊啊啊</p>
+                <p>
+                    <a href="#">评价</a>
+                    <a href="#">评价</a>
+                </p>
+                
+            </div>
+          <div class="wdp_l_r clearfix">
+                <ul class="wul">
+                    <li class="wli2">
+                        <a href="#"><img src="img/xiezi.jpg" /></a>
+                        <h6><a href="#">￥179.00</a></h6>
+                        <i>月销量</i>
+                    </li>
+                    <li class="wli2">
+                        <a href="#"><img src="img/xiezi.jpg" /></a>
+                        <h6><a href="#">￥179.00</a></h6>
+                        <i>月销量</i>
+                    </li>
+                    <li class="wli2">
+                        <a href="#"><img src="img/xiezi.jpg" /></a>
+                        <h6><a href="#">￥179.00</a></h6>
+                        <i>月销量</i>
+                    </li>
+                    <li class="wli2">
+                        <a href="#"><img src="img/xiezi.jpg" /></a>
+                        <h6><a href="#">￥179.00</a></h6>
+                        <i>月销量</i>
+                    </li>
+                </ul>
+        </div>
+        <div class="wdp_l clearfix">
+            <div class="wdp_l_l">
+                <a href="#"><img src="img/kuzi.jpg" /></a>
+                <h5><a href="#">￥179.00</a></h5>
+                <i>月销量</i>
+                <p>特别有范，谁啊啊啊啊啊啊啊啊</p>
+                <p>
+                    <a href="#">评价</a>
+                    <a href="#">评价</a>
+                </p>
+                
+            </div>
+          <div class="wdp_l_r clearfix">
+                <ul class="wul">
+                    <li class="wli2">
+                        <a href="#"><img src="img/xiezi.jpg" /></a>
+                        <h6><a href="#">￥179.00</a></h6>
+                        <i>月销量</i>
+                    </li>
+                    <li class="wli2">
+                        <a href="#"><img src="img/xiezi.jpg" /></a>
+                        <h6><a href="#">￥179.00</a></h6>
+                        <i>月销量</i>
+                    </li>
+                    <li class="wli2">
+                        <a href="#"><img src="img/xiezi.jpg" /></a>
+                        <h6><a href="#">￥179.00</a></h6>
+                        <i>月销量</i>
+                    </li>
+                    <li class="wli2">
+                        <a href="#"><img src="img/xiezi.jpg" /></a>
+                        <h6><a href="#">￥179.00</a></h6>
+                        <i>月销量</i>
+                    </li>
+                </ul>
+        </div>
+    </div>
+<!--二部分结束-->
+
+    <!-- 曹勇开始 -->
+   <div class="cy_w">
+            <ul class="footer clearfix">
+                
+                <li class="item">
+                    <h4 class="tit"><i class="ico1"></i><a href="#">消费者保障</a></h4>
+                    <span>
+                        <a href="#">保障范围</a>
+                        <a href="#">退货退款流程</a>
+                        <a href="#">服务中心</a>
+                        <a href="#">更多特色服务</a>
+                    </span>
+                </li>
+                <li class="item">
+                    <h4 class="tit"><i class="ico2"></i><a href="#">消费者保障</a></h4>
+                    <span>
+                        <a href="#">保障范围</a>
+                        <a href="#">退货退款流程</a>
+                        <a href="#">服务中心</a>
+                        <a href="#">更多特色服务</a>
+                    </span>
+                </li>
+                <li class="item">
+                    <h4 class="tit"><i class="ico3"></i><a href="#">消费者保障</a></h4>
+                    <span>
+                        <a href="#">保障范围</a>
+                        <a href="#">退货退款流程</a>
+                        <a href="#">服务中心</a>
+                        <a href="#">更多特色服务</a>
+                    </span>
+                </li>
+                <li class="item bnone">
+                    <h4 class="tit"><i class="ico4"></i><a href="#">消费者保障</a></h4>
+                    <span>
+                        <a href="#">保障范围</a>
+                        <a href="#">退货退款流程</a>
+                        <a href="#">服务中心</a>
+                        <a href="#">更多特色服务</a>
+                    </span>
+                </li>
+                
+            </ul>
+            <div class="links"><a href="#" class="nopading">阿里巴巴集团</a><a href="#">淘宝</a><a href="#">阿里巴巴集团</a><a href="#">淘宝</a><a href="#">天猫</a><a href="#">阿里巴巴集团</a><a href="#">淘宝</a><a href="#">天猫</a><a href="#">阿里巴巴集团</a><a href="#">淘宝</a><a href="#">天猫</a><a href="#">阿里巴巴集团</a><a href="#">淘宝</a><a href="#">天猫</a><a href="#">阿里巴巴集团</a><a href="#">淘宝</a><a href="#">天猫</a><a href="#">阿里巴巴集团</a><a href="#">淘宝</a><a href="#">天猫</a><a href="#">阿里巴巴集团</a><a href="#">淘宝</a><a href="#" class="bnone">天猫</a></div>
+            
+            <div class="links2"><a href="#">关于淘宝</a><a href="#">保障范围</a><a href="#">关于淘宝</a><a href="#">保障范围</a><a href="#">关于淘宝</a><a href="#">保障范围</a><a href="#">关于淘宝</a><a href="#">保障范围</a><a href="#">关于淘宝</a><a href="#">保障范围</a><a href="#">关于淘宝</a><a href="#">保障范围</a><a href="#" >淘宝网版权所有</a></div>
+            <img src="img/cy-pic.png"  />
+        </div>
+</body>
+</html>

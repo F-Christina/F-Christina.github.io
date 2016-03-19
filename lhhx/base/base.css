@@ -1,0 +1,11 @@
+/* 清除默认样式 -基础*/
+body{font-size:12px;}
+*{padding: 0;margin:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:12px;}
+a{text-decoration: none;color:#000;}
+ul,ol{list-style: none;}
+i,em{font-style: normal;}
+b,strong{font-weight: normal;}
+a img{border:none;}
+img{vertical-align: top}
+.clearfix:after{display:block;content:'';clear: both;}

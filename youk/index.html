@@ -1,0 +1,2101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/base.css"/>
+<style>
+.header {
+	width: 970px;
+	height: 74px;
+	margin: 0 auto;
+}
+h1 {
+	width: 140px;
+	height: 49px;
+	background: url(img/yklogo_h.png);
+	text-indent: -999em;
+	float: left;
+	margin-right: 180px;
+}
+.s_text {
+	width: 228px;
+	height: 36px;
+	border: 2px solid #a0a0a0;
+	border-right: none;
+	float: left;
+	margin-top: 10px;
+	outline: none;
+}
+.s_sou {
+	width: 88px;
+	height: 40px;
+	border: 1px solid #1c6acd;
+	background: url(img/s_1.png) no-repeat 18px 12px #2b8bdf;
+	padding-left: 38px;
+	line-height: 38px;
+	color: #fff;
+	margin-top: 10px;
+	float: left;
+	margin-right: 31px;
+}
+.s_headlist {
+	float: left;
+	margin-top: 24px;
+}
+.s_headlist li {
+	float: left;
+}
+.s_headlist a {
+	color: #555555;
+}
+.s_shang {
+	padding-left: 18px;
+	position: relative;
+	margin-right: 20px;
+}
+.s_shang i {
+	width: 16px;
+	height: 16px;
+	background: url(img/s_2.png);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.s_shang b {
+	width: 8px;
+	height: 4px;
+	background: url(img/s_3.png);
+	margin-left: 5px;
+	display: inline-block;
+}
+.s_hui {
+	margin-right: 21px;
+}
+.s_a {
+	margin-right: 25px;
+}
+.s_deng {
+	padding-left: 20px;
+	padding-right: 6px;
+	border-right: 1px solid #dcb290;
+	position: relative;
+	margin-right: 7px;
+}
+.s_deng em {
+	width: 16px;
+	height: 16px;
+	background: url(img/s_4.png);
+	position: absolute;
+	left: 0;
+	top: -1px;
+}
+.nav {
+	width: 970px;
+	height: 34px;
+	margin: 0 auto;
+	background: url(img/s_5.png) repeat-x left bottom;
+	margin-bottom: 20px;
+}
+.nav_llist {
+	float: left;
+	margin-top: 5px;
+	margin-right: 7px;
+}
+.nav_llist .active {
+	color: #3399e0;
+	border-bottom: 3px solid #06a7e1;
+}
+.nav_llist li {
+	float: left;
+	margin-right: 21px;
+}
+.nav_llist a {
+	font-size: 14px;
+	color: #555555;
+	padding-bottom: 12px;
+}
+.nav_rlist {
+	float: left;
+	margin-top: 9px;
+}
+.nav_rlist li {
+	float: left;
+	margin-right: 21px;
+}
+.nav_rlist a {
+	color: #555555;
+}
+.nav_rlist i {
+	width: 8px;
+	height: 4px;
+	background: url(img/s_3.png);
+	margin-left: 4px;
+	display: inline-block;
+}
+.nav_r {
+	width: 78px;
+	height: 25px;
+	border: 1px solid #d1d1d1;
+	background: #f2f2f2;
+	color: #06a7e1;
+	text-align: center;
+	line-height: 25px;
+	float: right;
+}
+.s_main {
+	width: 970px;
+	margin: 0 auto 40px;
+}
+.s_mainlist {
+	width: 660px;
+	float: left;
+}
+.s_mainlist li {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+.s_opa {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.s_opa1 {
+	width: 100%;
+	height: 100%;
+	background: #3a3a3c;
+	opacity: 0.5;
+}
+.s_wen_t {
+	padding-left: 6px;
+	color: #fff;
+	font-size: 16px;
+}
+.s_wen {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-bottom: 5px;
+}
+.s_wen_b {
+	margin-top: 9px;
+	color: #909090;
+}
+.s_wen_b i {
+	width: 12px;
+	height: 12px;
+	background: url(img/s_7.png);
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.s_wen_b b {
+	width: 12px;
+	height: 12px;
+	background: url(img/s_8.png);
+	display: inline-block;
+	margin-left: 7px;
+	margin-right: 5px;
+}
+.s_wen_b em {
+	width: 12px;
+	height: 12px;
+	background: url(img/s_9.png);
+	display: inline-block;
+	margin-left: 13px;
+	margin-right: 5px;
+}
+.s_mainlist strong {
+	width: 56px;
+	height: 20px;
+	background: url(img/s_10.png);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.s_mainlist span {
+	width: 200px;
+	height: 4px;
+	background: url(img/s_15.png);
+	position: absolute;
+	top: -4px;
+	left: 0;
+}
+.s_mainr {
+	width: 310px;
+	float: right;
+}
+.s_mainr_t {
+	position: relative;
+	margin-bottom: 20px;
+}
+.s_mainr_t div {
+	width: 34px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: #3a3a3c;
+	opacity: 0.5;
+}
+.s_mainr_t p {
+	width: 34px;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+}
+.s_mainr_b {
+	position: relative;
+}
+.s_mainr_b div {
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background: #3a3a3c;
+	opacity: 0.5;
+}
+.s_mainr_b p {
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	line-height: 20px;
+	color: #fff;
+	padding-left: 6px;
+}
+.s_grzx {
+	width: 970px;
+	margin: 0 auto;
+}
+.s_grzx li {
+	width: 200px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.s_opa2 {
+	position: relative;
+}
+.s_opa2 .s_opa3 {
+	width: 100%;
+	height: 50px;
+	background: #7b777c;
+	opacity: 0.5;
+filter:alpha(opacity:50);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.s_opa2 p {
+	position: absolute;
+	right: 5px;
+	bottom: 6px;
+	color: #fff;
+}
+.s_gr_b {
+	height: 58px;
+	padding: 12px 10px 10px 5px;
+	background: #f5f5f5;
+	font-size: 14px;
+}
+.s_gr_b p {
+	line-height: 20px;
+	color: #555555;
+}
+.s_grzx .s_ty {
+	padding-top: 23px;
+	padding-left: 10px;
+	background: url(img/s_16.png);
+	padding-bottom: 9px;
+	width: 190px;
+	margin-bottom: 0px;
+}
+.s_grzx .s_inter {
+	width: 40px;
+	height: 130px;
+	text-align: center;
+	padding: 60px 25px 0px;
+	font-size: 18px;
+	line-height: 24px;
+	background: #f5f5f5;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.s_grzx .s_ty_t {
+	font-size: 18px;
+	color: #909090;
+	margin-bottom: 17px;
+}
+.s_grzx .s_ty_m {
+	color: #909090;
+	margin-bottom: 56px;
+}
+.s_grzx .s_ty_b {
+	color: #909090;
+	margin-bottom: 8px;
+}
+.s_ty a {
+	width: 180px;
+	height: 35px;
+	background: #06a7e1;
+	color: #fff;
+	text-align: center;
+	line-height: 35px;
+	display: inline-block;
+}
+.s_yc {
+	width: 970px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.s_yc_l {
+	width: 660px;
+	float: left;
+}
+.s_yc_l li {
+	position: relative;
+}
+.s_yc_l span {
+	width: 200px;
+	height: 4px;
+	background: url(img/s_15.png);
+	position: absolute;
+	top: -4px;
+	left: 0;
+}
+.s_yc_r {
+	float: right;
+}
+.a_zq {
+	width: 310px;
+	line-height: 21px;
+	margin-bottom: 10px;
+}
+.a_zqq {
+	margin-top: 24px;
+	position: relative;
+}
+.a_zq img {
+	float: left;
+	margin-right: 10px;
+}
+.a_zq b {
+	float: left;
+	color: #555;
+	margin-bottom: 9px;
+}
+.a_zq p {
+	float: left;
+	color: #909090;
+	font-size: 11px;
+}
+.s_dingwei {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.s_yc_r .a_zq {
+	margin-bottom: 20px;
+}
+.s_yc_r .s_last1 {
+	margin-bottom: 10px;
+}
+.s_yc_r .s_last {
+	margin-bottom: 0px;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.a_movie {
+	width: 970px;
+	margin: 0 auto 46px;
+}
+.a_movie_head {
+	margin-bottom: 16px;
+}
+.a_movie_head h3 {
+	float: left;
+	font-size: 24px;
+	color: #9090a1;
+	margin-right: 20px;
+	margin-top: 4px;
+}
+.a_movie_head ul li {
+	float: left;
+	color: #555;
+	padding: 0px 10px;
+	line-height: 30px;
+	cursor: pointer;
+}
+.a_movie_head ul .act {
+	background: #06a7e1;
+	color: #fff;
+}
+.a_movie_main ul {
+	width: 660px;
+}
+.a_movie_main li {
+	position: relative;
+	float: left;
+	background: url(img/a_libg.png)no-repeat top left;
+	width: 200px;
+	height: 114px;
+	margin-right: 20px;
+	margin-bottom: 16px;
+}
+.a_movie_main .movie_one {
+	width: 420px;
+	height: 240px;
+	background: none;
+	padding-top: 0px;
+}
+.a_movie_main li img {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin-top: 4px;
+}
+.a_movie_main li .opa {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.a_movie_main li .text {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 16px;
+	color: #fff;
+	text-indent: 5px;
+	line-height: 19px;
+}
+.a_movie_main li .text p {
+	font-size: 12px;
+	color: #bbbbbb;
+}
+.a_zz {
+	position: absolute;
+	left: 0px;
+	top: 4px;
+	width: 43px;
+	height: 43px;
+}
+.a_btn li {
+	float: left;
+	padding: 0px 10px;
+	line-height: 30px;
+	color: #555;
+	height: 30px;
+}
+.a_btn .a_btn_act {
+	background: #06a7e1;
+	color: #fff;
+}
+.a_content {
+	width: 310px;
+	margin-top: 20px;
+}
+.a_content li {
+	float: left;
+	width: 155px;
+	margin-bottom: 10px;
+	height: 20px;
+	line-height: 20px;
+}
+.a_content li i {
+	width: 20px;
+	height: 20px;
+	background: #03a7e1;
+	line-height: 20px;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+	color: #fff;
+}
+.a_content li .a_red {
+	background: #ef3f22;
+}
+.a_content li a {
+	float: left;
+}
+.a_m_m {
+	margin-top: 9px;
+	margin-bottom: 19px;
+}
+.a_m_m a {
+	margin-right: 18px;
+}
+.s_yc .a_btn {
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+.a_movie .s_b {
+	margin-bottom: 0px;
+	height: 200px;
+	overflow: hidden;
+}
+.a_vip li {
+	height: 110px;
+	background: #f5f5f5;
+	width: 145px;
+	margin-right: 20px;
+}
+.a_vip li p {
+	text-align: center;
+	line-height: 30px;
+	color: #555;
+}
+.a_vip .a_vip_ls {
+	margin-right: 0px;
+}
+.a_zy li {
+	width: 310px;
+}
+.a_zy li p {
+	float: right;
+	color: #909090;
+}
+.a_yl {
+	margin-top: 45px;
+}
+.a_yl .a_zq {
+	margin-bottom: 20px;
+}
+.a_yl_main .a_con {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.a_yl_main li {
+	position: relative;
+	background: #f5f5f5;
+	width: 200px;
+	height: 190px;
+	margin-right: 20px;
+	float: left;
+	margin-bottom: 20px;
+}
+.a_yl_main ul {
+	width: 660px;
+}
+.a_yl_main li i {
+	position: absolute;
+	left: 161px;
+	top: 115px;
+	color: #fff;
+}
+.a_yl_main li .a_yl_a {
+	background: #fff;
+	margin-left: 45px;
+	padding-bottom: 7px;
+}
+.a_yl_main li .a_yl_a a {
+	float: left;
+}
+.a_yl_main li .a_yl_a p {
+	float: right;
+}
+.a_yl_b b {
+	display: inline-block;
+	background: url(img/a_pl.png) no-repeat;
+	text-indent: 20px;
+}
+.a_yl_b em {
+	display: inline-block;
+	background: url(img/a_r.png) no-repeat;
+	text-indent: 20px;
+}
+.a_yl_b {
+	margin: 11px 0px 11px 4px;
+}
+.a_yl_c {
+	margin: 11px 0px 11px 4px;
+}
+.a_music li {
+	background: #f5f5f5;
+	;
+	width: 200px;
+	height: 167px;
+	float: left;
+}
+.a_music li img {
+	position: relative;
+	margin-top: 0px;
+}
+/* 体育开始 */
+        .x_sports{width: 970px; margin: 0 auto 53px;}
+        .x_h2st{font-size: 25px; font-family: '微软雅黑'; margin-bottom: 22px;}
+        .x_h2st a{color: #909090;}
+        .x_sportsl{float:left;}
+        .x_sportsl li,.pri_con{background: #f5f5f5; width: 200px; height: 190px; color: #555555; float: left; margin-right: 20px;}
+        .x_sportsl li h6,.pri_con h6{color: #555555; line-height: 20px; width: 182px; margin-bottom: 11px;}
+        .x_sportsl li h6 a:hover{color: #06a7e1;}
+        .pri_con h6 a:hover{color: #06a7e1;}
+        .x_sportsl li img,.pri_con img{margin-bottom: 12px;}
+        .x_spor_c,.x_sportsl li h6,.pri_con h6{margin-left: 5px;}
+        .x_spor_c i{float: left; margin-right: 10px; color: #909090;}
+        .x_spor_c i span{width: 12px; height: 12px; background: url(img/x_ico.png) no-repeat 0 0; display:inline-block; margin-right: 5px;}
+        .x_spor_c b span{width: 12px; height: 12px; background: url(img/x_ico.png) no-repeat -16px 0; display:inline-block; margin-right: 5px;}
+        .x_spor_c b{float: left;}
+        .x_sportsr{float: left; }
+        .x_sportsr li{margin-bottom: 20px;}
+        .x_sportsr img{float: left; margin-right: 11px;}
+        .x_sportsr h6{float: left; margin-top: 5px;}
+        .x_sportsr h6 a:hover{color: #06a7e1;}
+        /* 体育结束 */
+
+        /* 汽车开始 */
+        .x_life{width: 970px; margin: 0 auto 53px;}
+        .x_lifel{float: left;}
+        .x_lifel li{margin-right: 20px; float:left;}
+        .x_life_top{position: relative; margin-bottom: 20px;}
+        .x_l_topn{position: absolute; bottom:5px; left:5px; width: 200px;}
+        .x_l_topn p a{color: #fff; line-height: 18px;}
+        .x_l_tco i span{width: 12px; height: 12px; background: url(img/x_ico.png) no-repeat 0 0; display:inline-block; margin-right: 5px;}
+        .x_l_tco i{float: left; color: #899090;}
+        .x_l_tco b{float: right; margin-right: 10px; color: #dddddd; font-weight: bold;}
+        
+        .x_lifer{float: left;}
+        .x_lifer_tit p{float: left;}
+        .x_lifer_tit h2{float: left; margin-right: 20px;}
+        .x_lifer_tit p a,.prir_tit a{float: left; padding: 10px 10px; text-align: center;}
+        .x_lifer_tit p a:hover{background: #06a7e1; color: #fff;}
+        .prir_tit a:hover{background: #06a7e1; color: #fff;}
+        .x_lifer_con{margin-bottom: 20px;}
+        .x_lifer_con li{margin-bottom: 10px;}
+        .x_lifer_con li a{float: left; color: #555555;}
+        .x_lifer_con li p{float: left;}
+        .x_lifer_con li img{margin-right: 5px;}
+        .x_lifer_con li .x_liftwo{margin-right: 10px;}
+        .x_special .x_spname{display:block; background: #f5f5f5; line-height: 30px; text-align: center; color: #555555;}
+        .x_special ul{margin-bottom: 20px;}
+        .x_special ul li{float: left;}
+        .x_special .x_spfirstli{ margin-right: 20px;}
+        /* 汽车结束 */
+
+        /* 个人频道开始 */
+        .pri_channel{width: 970px; margin: 0 auto 53px;}
+        .pri_l{float: left;}
+        .pri_l ul{width: 660px;}
+        .pri_l ul li{width: 200px; margin-right: 20px; float: left; margin-bottom: 20px;}
+        .pri_smtit a{float:left; margin-left: 45px; margin-bottom: 7px; color: #3399e0;}
+        .pri_smtit i{float:right; color: #909090;}
+        .pri_smtit{position: relative;}
+        .pri_smtit img{ position: absolute; left: 0px; top: 0px;}
+        .pri_r{float: left;}
+        .pri_r ul li{margin-bottom: 20px;}
+        .prir_lpic{position: relative; float: left; margin-right: 10px;}
+        .prir_lpic i{width: 20px; height: 20px; background: #ef3f22; color: #fff; position: absolute; top: 0px; left: 0px; text-align: center; line-height: 20px;}
+        .prir_con h6 i{width: 14px; height: 14px; background: url(img/x_ico.png) no-repeat -50px 0; display: block; float: left; margin-right: 8px;}
+        .prir_con h6 a{ float: left; color: #3399e0; margin-right: 8px;}
+        .prir_con h6 span{ float: left;}
+        .prir_con{float: left; margin-top: 10px;}
+        .prir_con h6{line-height: 22px;}
+        .pri_r .prir_tit{margin-bottom: 20px;}
+        /* 个人频道结束 */
+
+        /* 视频话题开始  */
+        .video{width: 970px; margin: 0 auto 50px;}
+        .v_l_top li{float: left; margin-right: 20px; margin-bottom: 40px;}
+        .v_l_bottom li i{width:4px; height:4px; display: inline-block; background: url(img/x_ico.png) no-repeat -69px 0; margin: 2px;}
+        .v_l_bottom li{line-height: 38px;}
+        .v_l_bottom li a:hover{color: #3399e9;}
+        .v_l_bottom{float: left; margin-right: 50px; width: 280px;}
+        .v_left{float: left;}
+        .v_right{float: left;}
+        /* 视频话题结束  */
+        .yk_pic{width: 970px; margin: 0 auto 24px; display:block; border-bottom: 2px solid #dddddd; padding-bottom: 20px;}
+        
+        
+        .footer{width: 970px; margin: 0 auto;}
+        .x_folist{float:left; }
+        .x_fotop{margin-bottom: 54px;}
+        .x_fotop p a{float: left; margin-right: 10px;line-height: 28px; color: #555555;}
+        .x_fotop p a:hover{color: #3399e9;}
+        .x_fotop h6{line-height: 28px; color: #909090;}
+        .x_ft1{margin-bottom: 1px; margin-right: 34px; }
+        .x_ft1 p{width: 216px;}
+        .x_foli2{float: left;}
+        .x_foli2 p{width: 204px;}
+        .x_foli2 p a{line-height: 28px;}
+        .x_foli2 li{margin-right: 30px;}
+        .x_foli3 p{width: 110px;}
+        .x_foli4 p{width: 58px;}
+        .x_forig{float: left;}
+        .x_forig li a{display: block; line-height: 28px;}
+        .x_forig li{float: left;}
+        .x_forig .x_fo2{margin-right: 18px;}
+        .x_fo_1{line-height: 25px; float: left;}
+		.x_fo_1 li p{margin-bottom:12px;}
+        .x_fo_1 li p i{width: 16px; height: 16px; background: url(img/a_11.png) no-repeat; display: inline-block; margin: -3px; margin-right: 4px;}
+        .x_fo_1 li{margin-right: 49px; float: left;}
+        .x_fobott{float: left; margin-bottom: 54px;}
+        .x_fobott a{float: left; margin-right: 20px;}
+        .x_fobott .x_foz{float: left; margin-top: 20px;}
+        .x_foz i{display:block; font-size: 16px; line-height: 29px;}
+        .x_fobottom{margin-left: 108px;margin-bottom:24px;}
+        .x_fobottom p{float:left; text-align: center; margin-right: 27px;}
+</style>
+</head>
+
+<body>
+<div class="header clearfix">
+	<h1>优酷</h1>
+	<input type="text" class="s_text"/>
+	<input type="submit" value="搜索" class="s_sou"/>
+	<ul class="s_headlist">
+		<li><a href="#" class="s_shang"><i></i>上传<b></b></a></li>
+		<li><a href="#" class="s_hui">会员</a></li>
+		<li><a href="#" class="s_a">APP下载</a></li>
+		<li><a href="#" class="s_deng"><em></em>登录</a></li>
+		<li><a href="#" class="s_zhu">注册</a></li>
+	</ul>
+</div>
+<div class="nav">
+	<ul class="nav_llist">
+		<li><a href="#" class="active">首页</a></li>
+		<li><a href="#">电视剧</a></li>
+		<li><a href="#">电影</a></li>
+		<li><a href="#">综艺</a></li>
+		<li><a href="#">音乐</a></li>
+		<li><a href="#">动漫</a></li>
+		<li><a href="#">全部</a></li>
+	</ul>
+	<ul class="nav_rlist">
+		<li><a href="#">资讯·科技<i></i></a></li>
+		<li><a href="#">娱乐·搞笑<i></i></a></li>
+		<li><a href="#">旅游·亲子<i></i></a></li>
+		<li><a href="#">排行</a></li>
+	</ul>
+	<a href="#" class="nav_r">去个性版</a> </div>
+<div class="s_main clearfix">
+	<ul class="s_mainlist">
+		<li> <a href="#"><img src="img/s_6.png"/></a>
+			<div class="s_opa">
+				<div class="s_opa1"></div>
+				<div class="s_wen">
+					<p class="s_wen_t"> 印尼找到失联客机残骸 已发现6具遗体 </p>
+					<div class="s_wen_b"><i></i>新视点<b></b>25.9万<em></em>258</div>
+				</div>
+			</div>
+			<strong></strong> </li>
+		<li> <a href="#"><img src="img/s_11.png"/></a>
+			<div class="s_opa">
+				<div class="s_opa1"></div>
+				<div class="s_wen">
+					<p class="s_wen_t"> 印尼找到失联客机残骸</p>
+				</div>
+			</div>
+		</li>
+		<li> <a href="#"><img src="img/s_11.png"/></a>
+			<div class="s_opa">
+				<div class="s_opa1"></div>
+				<div class="s_wen">
+					<p class="s_wen_t"> 印尼找到失联客机残骸</p>
+				</div>
+			</div>
+		</li>
+		<li> <a href="#"><img src="img/s_11.png"/></a>
+			<div class="s_opa">
+				<div class="s_opa1"></div>
+				<div class="s_wen">
+					<p class="s_wen_t"> 印尼找到失联客机残骸</p>
+				</div>
+			</div>
+			<span></span> </li>
+		<li> <a href="#"><img src="img/s_11.png"/></a>
+			<div class="s_opa">
+				<div class="s_opa1"></div>
+				<div class="s_wen">
+					<p class="s_wen_t"> 印尼找到失联客机残骸</p>
+				</div>
+			</div>
+			<span></span> </li>
+		<li> <a href="#"><img src="img/s_11.png"/></a>
+			<div class="s_opa">
+				<div class="s_opa1"></div>
+				<div class="s_wen">
+					<p class="s_wen_t"> 印尼找到失联客机残骸</p>
+				</div>
+			</div>
+		</li>
+	</ul>
+	<div class="s_mainr">
+		<div class="s_mainr_t"> <a href="#"><img src="img/s_12.png"/></a>
+			<div></div>
+			<p>&gt;&gt;</p>
+		</div>
+		<div class="s_mainr_b"> <a href="#"><img src="img/s_13.png"/></a>
+			<div></div>
+			<p>年度最不想错过闺蜜真情感动</p>
+		</div>
+	</div>
+</div>
+<div class="a_movie clearfix">
+	<div class="a_movie_head clearfix">
+		<h3>个人中心</h3>
+		<ul class="fl">
+			<li class="act">猜你喜欢</li>
+			<li>观看记录</li>
+			<li>我的收藏</li>
+			<li>我的订阅</li>
+			<li>会员专享</li>
+		</ul>
+	</div>
+	<ul class="s_grzx clearfix s_b">
+		<li>
+			<div class="s_opa2"> <a href="#"><img src="img/s_14.png"/></a>
+				<div class="s_opa3"></div>
+				<p>01:20</p>
+			</div>
+			<div class="s_gr_b">
+				<p>白痴玩汽车开冰湖上，坑不死你</p>
+				<div class="s_wen_b"><b></b>164,252<em></em>13</div>
+			</div>
+		</li>
+		<li>
+			<div class="s_opa2"> <a href="#"><img src="img/s_14.png"/></a>
+				<div class="s_opa3"></div>
+				<p>01:20</p>
+			</div>
+			<div class="s_gr_b">
+				<p>白痴玩汽车开冰湖上，坑不死你</p>
+				<div class="s_wen_b"><b></b>164,252<em></em>13</div>
+			</div>
+		</li>
+		<li>
+			<div class="s_opa2"> <a href="#"><img src="img/s_14.png"/></a>
+				<div class="s_opa3"></div>
+				<p>01:20</p>
+			</div>
+			<div class="s_gr_b">
+				<p>白痴玩汽车开冰湖上，坑不死你</p>
+				<div class="s_wen_b"><b></b>164,252<em></em>13</div>
+			</div>
+		</li>
+		<li class="s_ty">
+			<p class="s_ty_t">Hi,你好</p>
+			<p class="s_ty_m">已看0分钟，击败0%小伙伴</p>
+			<p class="s_ty_b">登录可以赞时长玩升级哦~~</p>
+			<a href="#">马上体验</a> </li>
+		<li class="s_inter">进入个人中心</li>
+	</ul>
+</div>
+<div class="s_yc clearfix">
+	<ul class="a_btn clearfix">
+		<li>最佳原创</li>
+		<li class="a_btn_act">优酷出品</li>
+	</ul>
+	<div class="s_yc_l">
+		<ul class="s_grzx">
+			<li>
+				<div class="s_opa2"> <a href="#"><img src="img/s_14.png"/></a>
+					<div class="s_opa3"></div>
+					<p>01:20</p>
+				</div>
+				<div class="s_gr_b">
+					<p>白痴玩汽车开冰湖上，坑不死你</p>
+					<div class="s_wen_b"><b></b>164,252<em></em>13</div>
+				</div>
+				<span></span> </li>
+			<li>
+				<div class="s_opa2"> <a href="#"><img src="img/s_14.png"/></a>
+					<div class="s_opa3"></div>
+					<p>01:20</p>
+				</div>
+				<div class="s_gr_b">
+					<p>白痴玩汽车开冰湖上，坑不死你</p>
+					<div class="s_wen_b"><b></b>164,252<em></em>13</div>
+				</div>
+				<span></span> </li>
+			<li>
+				<div class="s_opa2"> <img src="img/s_14.png"/>
+					<div class="s_opa3"></div>
+					<p>01:20</p>
+				</div>
+				<div class="s_gr_b">
+					<p>白痴玩汽车开冰湖上，坑不死你</p>
+					<div class="s_wen_b"><b></b>164,252<em></em>13</div>
+				</div>
+				<span></span> </li>
+		</ul>
+		<img src="img/s_17.png"/> </div>
+	<div class="s_yc_r">
+		<div class="a_zq clearfix"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+		<div class="a_zq clearfix"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+		<div class="a_zq clearfix"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+		<div class="a_zq clearfix s_last1"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+		<div class="a_zq clearfix s_last"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+	</div>
+</div>
+<div class="a_movie clearfix">
+	<div class="a_movie_l fl">
+		<div class="a_movie_head clearfix">
+			<h3>电视剧</h3>
+			<ul class="fl">
+				<li class="act">最新</li>
+				<li>韩剧</li>
+				<li>大陆剧</li>
+				<li>英美剧</li>
+				<li>港台剧</li>
+			</ul>
+		</div>
+		<div class="a_movie_main ">
+			<ul class="clearfix">
+				<li class="movie_one"> <img src="img/a_dsj.png" />
+					<div class="opa"></div>
+					<div class="text"> 鹿鼎记
+						<p>七“仙女”大战花心韦小宝</p>
+					</div>
+				</li>
+				<li> <img src="img/a_wmn.png" />
+					<div class="opa"></div>
+					<div class="text">武媚娘传奇 TV版
+						<p>女汉子斗智赢君心</p>
+					</div>
+				</li>
+				<li> <i class="a_zz"></i> <img src="img/a_wmn.png" />
+					<div class="opa"></div>
+					<div class="text">武媚娘传奇 TV版
+						<p>女汉子斗智赢君心</p>
+					</div>
+				</li>
+				<li> <i class="a_zz"></i> <img src="img/a_wmn.png" />
+					<div class="opa"></div>
+					<div class="text">武媚娘传奇 TV版
+						<p>女汉子斗智赢君心</p>
+					</div>
+				</li>
+				<li> <i class="a_zz"></i> <img src="img/a_wmn.png" />
+					<div class="opa"></div>
+					<div class="text">武媚娘传奇 TV版
+						<p>女汉子斗智赢君心</p>
+					</div>
+				</li>
+				<li> <i class="a_zz"></i> <img src="img/a_wmn.png" />
+					<div class="opa"></div>
+					<div class="text">武媚娘传奇 TV版
+						<p>女汉子斗智赢君心</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="a_movie_r fr">
+		<ul class="a_btn clearfix">
+			<li class="a_btn_act">电影排行</li>
+			<li>华语</li>
+			<li>欧美</li>
+			<li>日韩</li>
+			<li>院线</li>
+		</ul>
+		<ul class="a_content clearfix">
+			<li><i class="a_red">1</i><a href="#">武媚娘传奇</a></li>
+			<li><i>6</i><a href="#">武媚娘传奇</a></li>
+			<li><i class="a_red">2</i><a href="#">武媚娘传奇</a></li>
+			<li><i>7</i><a href="#">武媚娘传奇</a></li>
+			<li><i class="a_red">3</i><a href="#">武媚娘传奇</a></li>
+			<li><i>8</i><a href="#">武媚娘传奇</a></li>
+			<li><i>4</i><a href="#">武媚娘传奇</a></li>
+			<li><i>9</i><a href="#">武媚娘传奇</a></li>
+			<li><i>5</i><a href="#">武媚娘传奇</a></li>
+			<li><i>10</i><a href="#">武媚娘传奇</a></li>
+		</ul>
+		<div class="clearfix a_m_m"> <a href="#" class="fl">指数排行榜》</a> <a href="#" class="fl">更多排行榜》</a> </div>
+		<img src="img/a_sht.png"/>
+		<div class="a_zqq">
+			<div class="a_zq clearfix"> <img src="img/a_zq.png"/> <b><a href="#">最强大脑第二季 全网独播</a></b>
+				<p>2015年1月2日强势来袭</p>
+			</div>
+			<div class="a_zq clearfix"> <img src="img/a_zq.png"/> <b><a href="#">最强大脑第二季 全网独播</a></b>
+				<p>2015年1月2日强势来袭</p>
+			</div>
+			<div class="s_dingwei"><img src="img/s_18.png"/></div>
+		</div>
+	</div>
+</div>
+<div class="a_movie clearfix">
+	<div class="a_movie_l fl">
+		<div class="a_movie_head clearfix">
+			<h3>韩剧</h3>
+		</div>
+		<div class="a_movie_main ">
+			<ul class="clearfix">
+				<li> <img src="img/s_19.png" />
+					<div class="opa"></div>
+					<div class="text">匹诺曹
+						<p>李钟硕朴信惠爱情罗曼史</p>
+					</div>
+				</li>
+				<li> <i class="a_zz"></i> <img src="img/s_19.png" />
+					<div class="opa"></div>
+					<div class="text">匹诺曹
+						<p>李钟硕朴信惠爱情罗曼史</p>
+					</div>
+				</li>
+				<li> <i class="a_zz"></i> <img src="img/s_19.png" />
+					<div class="opa"></div>
+					<div class="text">匹诺曹
+						<p>李钟硕朴信惠爱情罗曼史</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="a_movie_r fr">
+		<ul class="a_btn clearfix">
+			<li class="a_btn_act">电影排行</li>
+			<li>华语</li>
+			<li>欧美</li>
+			<li>日韩</li>
+			<li>院线</li>
+		</ul>
+		<ul class="a_content clearfix">
+			<li><i class="a_red">1</i><a href="#">行尸走肉 第五季</a></li>
+			<li><i>5</i><a href="#">行尸走肉 第五季</a></li>
+			<li><i class="a_red">2</i><a href="#">行尸走肉 第五季</a></li>
+			<li><i>6</i><a href="#">行尸走肉 第五季</a></li>
+			<li><i class="a_red">3</i><a href="#">行尸走肉 第五季</a></li>
+			<li><i>7</i><a href="#">行尸走肉 第五季</a></li>
+			<li><i>4</i><a href="#">行尸走肉 第五季</a></li>
+			<li><i>8</i><a href="#">行尸走肉 第五季</a></li>
+		</ul>
+	</div>
+</div>
+<div class="a_movie clearfix">
+	<div class="a_movie_l fl">
+		<div class="a_movie_head clearfix">
+			<h3>电影·预告片</h3>
+			<ul class="fl">
+				<li class="act">最新</li>
+				<li>华语</li>
+				<li>好莱坞</li>
+				<li>预告片</li>
+				<li>女性</li>
+			</ul>
+		</div>
+		<div class="a_movie_main ">
+			<ul class="clearfix">
+				<li class="movie_one"> <img src="img/a_1.png" />
+					<div class="opa"></div>
+					<div class="text"> 【全程直击】
+						<微爱>
+						新年答谢会
+						<p>[预告片]陈赫涂红唇献吻顾长卫</p>
+					</div>
+				</li>
+				<li> <img src="img/a_2.png" />
+					<div class="opa"></div>
+					<div class="text">[独家]智取威虎山记录
+						<p>小栓子变身韩庚爷爷</p>
+					</div>
+				</li>
+				<li> <i class="a_zz"></i> <img src="img/a_2.png" />
+					<div class="opa"></div>
+					<div class="text">[独家]智取威虎山记录
+						<p>小栓子变身韩庚爷爷</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="a_movie_r fr">
+		<ul class="a_btn clearfix">
+			<li class="a_btn_act">电影排行</li>
+			<li>华语</li>
+			<li>欧美</li>
+			<li>日韩</li>
+			<li>院线</li>
+		</ul>
+		<ul class="a_content clearfix">
+			<li><i class="a_red">1</i><a href="#">好命先生</a></li>
+			<li><i>6</i><a href="#">好命先生</a></li>
+			<li><i class="a_red">2</i><a href="#">好命先生</a></li>
+			<li><i>7</i><a href="#">好命先生</a></li>
+			<li><i class="a_red">3</i><a href="#">好命先生</a></li>
+			<li><i>8</i><a href="#">好命先生</a></li>
+			<li><i>4</i><a href="#">好命先生</a></li>
+			<li><i>9</i><a href="#">好命先生</a></li>
+			<li><i>5</i><a href="#">好命先生</a></li>
+			<li><i>10</i><a href="#">好命先生</a></li>
+		</ul>
+		<div class="clearfix a_m_m"> <a href="#" class="fl">指数排行榜》</a> <a href="#" class="fl">更多排行榜》</a> </div>
+		<img src="img/a-3.gif"/> </div>
+</div>
+<div class="a_movie clearfix">
+	<div class="a_movie_l fl">
+		<div class="a_movie_head clearfix">
+			<h3>院线·会员</h3>
+			<ul class="fl">
+				<li class="act">热播大片</li>
+				<li>华语精选</li>
+				<li>好莱坞精选</li>
+				<li>2014钢丝节</li>
+				<li>即将上线</li>
+			</ul>
+		</div>
+		<div class="a_movie_main ">
+			<ul class="clearfix">
+				<li> <img src="img/a_2.png" />
+					<div class="opa"></div>
+					<div class="text">[独家]智取威虎山记录
+						<p>小栓子变身韩庚爷爷</p>
+					</div>
+				</li>
+				<li> <img src="img/a_2.png" />
+					<div class="opa"></div>
+					<div class="text">[独家]智取威虎山记录
+						<p>小栓子变身韩庚爷爷</p>
+					</div>
+				</li>
+				<li> <i class="a_zz"></i> <img src="img/a_2.png" />
+					<div class="opa"></div>
+					<div class="text">[独家]智取威虎山记录
+						<p>小栓子变身韩庚爷爷</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="a_movie_r fr">
+		<ul class="a_btn clearfix">
+			<li class="a_btn_act">会员活动</li>
+		</ul>
+		<ul class="a_content a_vip clearfix">
+			<li><a href="#"><img src="img/a_hy.png">
+				<p>优酷会员双蛋有豪礼</p>
+				</a></li>
+			<li class="a_vip_ls"><a href="#"><img src="img/a_hy.png">
+				<p>优酷会员双蛋有豪礼</p>
+				</a></li>
+		</ul>
+	</div>
+</div>
+<div class="a_movie clearfix">
+	<div class="a_movie_l fl">
+		<div class="a_movie_head clearfix">
+			<h3>综艺</h3>
+			<ul class="fl">
+				<li class="act">热播综艺</li>
+				<li>大陆综艺</li>
+				<li>日韩综艺</li>
+				<li>港台·欧美</li>
+			</ul>
+		</div>
+		<div class="a_movie_main ">
+			<ul class="clearfix">
+				<li class="movie_one"> <img src="img/a_1.png" />
+					<div class="opa"></div>
+					<div class="text"> 【全程直击】
+						<微爱>
+						新年答谢会
+						<p>[预告片]陈赫涂红唇献吻顾长卫</p>
+					</div>
+				</li>
+				<li> <img src="img/a_2.png" />
+					<div class="opa"></div>
+					<div class="text">[独家]智取威虎山记录
+						<p>小栓子变身韩庚爷爷</p>
+					</div>
+				</li>
+				<li> <i class="a_zz"></i> <img src="img/a_2.png" />
+					<div class="opa"></div>
+					<div class="text">[独家]智取威虎山记录
+						<p>小栓子变身韩庚爷爷</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<img src="img/a_fd.jpg"/> </div>
+	<div class="a_movie_r fr">
+		<ul class="a_btn clearfix">
+			<li class="a_btn_act">综艺排行</li>
+			<li>大陆</li>
+			<li>日韩</li>
+			<li>台湾</li>
+		</ul>
+		<ul class="a_content a_zy clearfix">
+			<li><i class="a_red">1</i><a href="#">孙杨八块腹肌看羞baby</a>
+				<p>奔跑吧兄弟2014</p>
+			</li>
+			<li><i class="a_red">2</i><a href="#">孙杨八块腹肌看羞baby</a>
+				<p>奔跑吧兄弟2014</p>
+			</li>
+			<li><i class="a_red">3</i><a href="#">孙杨八块腹肌看羞baby</a>
+				<p>奔跑吧兄弟2014</p>
+			</li>
+			<li><i>4</i><a href="#">孙杨八块腹肌看羞baby</a>
+				<p>奔跑吧兄弟2014</p>
+			</li>
+			<li><i>5</i><a href="#">孙杨八块腹肌看羞baby</a>
+				<p>奔跑吧兄弟2014</p>
+			</li>
+			<li><i>6</i><a href="#">孙杨八块腹肌看羞baby</a>
+				<p>奔跑吧兄弟2014</p>
+			</li>
+			<li><i>7</i><a href="#">孙杨八块腹肌看羞baby</a>
+				<p>奔跑吧兄弟2014</p>
+			</li>
+		</ul>
+		<div class="clearfix a_m_m"> <a href="#" class="fl">指数排行榜》</a> <a href="#" class="fl">更多排行榜》</a> </div>
+		<div class="a_zqq">
+			<div class="a_zq clearfix"> <img src="img/a_zq.png"/> <b><a href="#">最强大脑第二季 全网独播</a></b>
+				<p>2015年1月2日强势来袭</p>
+			</div>
+			<div class="a_zq clearfix"> <img src="img/a_zq.png"/> <b><a href="#">最强大脑第二季 全网独播</a></b>
+				<p>2015年1月2日强势来袭</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="a_movie clearfix">
+	<div class="a_movie_l fl">
+		<div class="a_movie_head clearfix">
+			<h3>娱乐·搞笑</h3>
+			<ul class="fl">
+				<li class="act">娱乐资讯</li>
+				<li>电视资讯</li>
+				<li>好莱坞精选</li>
+				<li>电影资讯</li>
+			</ul>
+		</div>
+		<div class="a_yl_main ">
+			<ul class="clearfix">
+				<li>
+					<p class="a_con"><img src="img/a_5.png"></p>
+					<div class="clearfix a_yl_a"> <a href="#" class="fl">优酷全娱乐</a>
+						<p>19.3万订阅</p>
+					</div>
+					<a href="#"><img src="img/a_4.png" /></a> <i>01:17</i>
+					<p class="a_yl_c">18岁！新一代清纯星女郎曝光</p>
+					<div class="a_yl_b"> <b><a href="#">19.6万</a></b> <em><a href="#">239</a></em> </div>
+				</li>
+				<li>
+					<p class="a_con"><img src="img/a_5.png"></p>
+					<div class="clearfix a_yl_a"> <a href="#" class="fl">优酷全娱乐</a>
+						<p>19.3万订阅</p>
+					</div>
+					<a href="#"><img src="img/a_4.png" /></a> <i>01:17</i>
+					<p class="a_yl_c">18岁！新一代清纯星女郎曝光</p>
+					<div class="a_yl_b"> <b><a href="#">19.6万</a></b> <em><a href="#">239</a></em> </div>
+				</li>
+				<li>
+					<p class="a_con"><img src="img/a_5.png"></p>
+					<div class="clearfix a_yl_a"> <a href="#" class="fl">优酷全娱乐</a>
+						<p>19.3万订阅</p>
+					</div>
+					<a href="#"><img src="img/a_4.png" /></a> <i>01:17</i>
+					<p class="a_yl_c">18岁！新一代清纯星女郎曝光</p>
+					<div class="a_yl_b"> <b><a href="#">19.6万</a></b> <em><a href="#">239</a></em> </div>
+				</li>
+				<li>
+					<p class="a_con"><img src="img/a_5.png"></p>
+					<div class="clearfix a_yl_a"> <a href="#" class="fl">优酷全娱乐</a>
+						<p>19.3万订阅</p>
+					</div>
+					<a href="#"><img src="img/a_4.png" /></a> <i>01:17</i>
+					<p class="a_yl_c">18岁！新一代清纯星女郎曝光</p>
+					<div class="a_yl_b"> <b><a href="#">19.6万</a></b> <em><a href="#">239</a></em> </div>
+				</li>
+				<li>
+					<p class="a_con"><img src="img/a_5.png"></p>
+					<div class="clearfix a_yl_a"> <a href="#" class="fl">优酷全娱乐</a>
+						<p>19.3万订阅</p>
+					</div>
+					<a href="#"><img src="img/a_4.png" /></a> <i>01:17</i>
+					<p class="a_yl_c">18岁！新一代清纯星女郎曝光</p>
+					<div class="a_yl_b"> <b><a href="#">19.6万</a></b> <em><a href="#">239</a></em> </div>
+				</li>
+				<li>
+					<p class="a_con"><img src="img/a_5.png"></p>
+					<div class="clearfix a_yl_a"> <a href="#" class="fl">优酷全娱乐</a>
+						<p>19.3万订阅</p>
+					</div>
+					<a href="#"><img src="img/a_4.png" /></a> <i>01:17</i>
+					<p class="a_yl_c">18岁！新一代清纯星女郎曝光</p>
+					<div class="a_yl_b"> <b><a href="#">19.6万</a></b> <em><a href="#">239</a></em> </div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="a_movie_r a_yl fr">
+		<div class="a_zq clearfix"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+		<div class="a_zq clearfix"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+		<div class="a_zq clearfix"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+		<div class="a_zq clearfix"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+		<div class="a_zq clearfix"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+		<div class="a_zq clearfix"> <img src="img/a_nana.png"/> <b><a href="#">NANA登顶全球美女秒范爷</a></b>
+			<p>百大美女百大美女</p>
+		</div>
+	</div>
+</div>
+<div class="a_movie clearfix">
+	<div class="a_movie_l fl">
+		<div class="a_movie_head clearfix">
+			<h3>音乐</h3>
+			<ul class="fl">
+				<li class="act">最热音乐</li>
+				<li>华语音乐</li>
+				<li>欧美音乐</li>
+				<li>日韩音乐</li>
+				<li>音乐牛人</li>
+			</ul>
+		</div>
+		<div class="a_movie_main a_music">
+			<ul class="clearfix">
+				<li><a href="#"> <img src="img/a_6.png"/>
+					<p class="a_yl_c">18岁！新一代清纯星女郎曝光</p>
+					<div class="a_yl_b"> <b><a href="#">19.6万</a></b> <em><a href="#">239</a></em> </div>
+					</a></li>
+				<li><a href="#"> <img src="img/a_6.png"/>
+					<p class="a_yl_c">18岁！新一代清纯星女郎曝光</p>
+					<div class="a_yl_b"> <b><a href="#">19.6万</a></b> <em><a href="#">239</a></em> </div>
+					</a></li>
+				<li><a href="#"> <img src="img/a_6.png"/>
+					<p class="a_yl_c">18岁！新一代清纯星女郎曝光</p>
+					<div class="a_yl_b"> <b><a href="#">19.6万</a></b> <em><a href="#">239</a></em> </div>
+					</a></li>
+			</ul>
+		</div>
+		<img src="img/a_7.png"/> </div>
+	<div class="a_movie_r fr">
+		<ul class="a_btn clearfix">
+			<li class="a_btn_act">华语榜</li>
+			<li>欧美榜</li>
+			<li>日韩榜</li>
+		</ul>
+		<ul class="a_content a_zy clearfix">
+			<li><i class="a_red">1</i><a href="#">赞了</a>
+				<p>裴涩琪</p>
+			</li>
+			<li><i class="a_red">2</i><a href="#">赞了</a>
+				<p>裴涩琪</p>
+			</li>
+			<li><i class="a_red">3</i><a href="#">赞了</a>
+				<p>裴涩琪</p>
+			</li>
+			<li><i>4</i><a href="#">赞了</a>
+				<p>裴涩琪</p>
+			</li>
+			<li><i>5</i><a href="#">赞了</a>
+				<p>裴涩琪</p>
+			</li>
+		</ul>
+		<div class="clearfix a_m_m"> <a href="#" class="fl">指数排行榜》</a> <a href="#" class="fl">更多排行榜》</a> </div>
+		<div class="a_zqq">
+			<div class="a_zq clearfix"> <img src="img/a_8.png"/> <b><a href="#">最强大脑第二季 全网独播</a></b>
+				<p>2015年1月2日强势来袭</p>
+			</div>
+			<div class="a_zq clearfix"> <img src="img/a_8.png"/> <b><a href="#">最强大脑第二季 全网独播</a></b>
+				<p>2015年1月2日强势来袭</p>
+			</div>
+		</div>
+	</div>
+</div>
+  <!-- 体育开始 -->
+    <div class="x_sports">
+        <h2 class="x_h2st"><a href="#">体育·人文</a></h2>
+        <div class="clearfix">
+            <ul class="x_sportsl clearfix">
+                <li>
+                    <a href="#"><img src="img/x_car.gif" /></a>
+                    <h6><a href="#">2014中国极限大神震撼混剪</a></h6>
+                    <div class="x_spor_c clearfix">
+                        <i><span></span>10.2万</i>
+                        <b><span></span>红牛运动世界</b>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/x_car.gif" /></a>
+                    <h6><a href="#">2014中国极限大神震撼混剪</a></h6>
+                    <div class="x_spor_c clearfix">
+                        <i><span></span>10.2万</i>
+                        <b><span></span>红牛运动世界</b>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="img/x_car.gif" /></a>
+                    <h6><a href="#">2014中国极限大神震撼混剪</a></h6>
+                    <div class="x_spor_c clearfix">
+                        <i><span></span>10.2万</i>
+                        <b><span></span>红牛运动世界</b>
+                    </div>
+                </li>
+            </ul>
+            <ul class="x_sportsr">
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic1.gif" /></a>
+                    <h6><a href="#">[酷玩]单车之神"鬼城"骑行</a></h6>
+                </li>
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic1.gif" /></a>
+                    <h6><a href="#">[酷玩]单车之神"鬼城"骑行</a></h6>
+                </li>
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic1.gif" /></a>
+                    <h6><a href="#">[酷玩]单车之神"鬼城"骑行</a></h6>
+                </li>
+            </ul>
+        </div>   
+    </div>
+    <!-- 体育结束 -->
+
+    <!-- 生活开始 -->
+    <div class="x_life clearfix">
+        <ul class="x_lifel clearfix">
+            <li>
+                <h2 class="x_h2st"><a href="#">生活</a></h2>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_lh.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">鹿晗撞衫韩国欧巴</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_lh.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">鹿晗撞衫韩国欧巴</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2 class="x_h2st"><a href="#">时尚</a></h2>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_lh.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">鹿晗撞衫韩国欧巴</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_lh.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">鹿晗撞衫韩国欧巴</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2 class="x_h2st"><a href="#">亲子</a></h2>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_lh.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">鹿晗撞衫韩国欧巴</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_lh.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">鹿晗撞衫韩国欧巴</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="x_lifer">
+            <div class="x_lifer_tit clearfix">
+                <h2 class="x_h2st"><a href="#">品牌</a></h2>
+                <p class="clearfix">
+                    <a href="#">时尚</a>
+                    <a href="#">奢侈品</a>
+                    <a href="#">汽车</a>
+                    <a href="#">生活</a>
+                </p>
+            </div>
+            <ul class="x_lifer_con">
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic2.gif"/></a>
+                    <a href="#" class="x_liftwo"><img src="img/x_pic3.gif"/></a>
+                    <p><a href="#">Omega Seasons Greet i</a></p>
+                </li>
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic2.gif"/></a>
+                    <a href="#" class="x_liftwo"><img src="img/x_pic3.gif"/></a>
+                    <p><a href="#">Omega Seasons Greet i</a></p>
+                </li>
+            </ul>
+            <ul class="x_lifer_con">
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic2.gif"/></a>
+                    <a href="#" class="x_liftwo"><img src="img/x_pic3.gif"/></a>
+                    <p><a href="#">Omega Seasons Greet i</a></p>
+                </li>
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic2.gif"/></a>
+                    <a href="#" class="x_liftwo"><img src="img/x_pic3.gif"/></a>
+                    <p><a href="#">Omega Seasons Greet i</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 生活结束 -->
+
+    <!-- 汽车开始 -->
+    <div class="x_life clearfix">
+        <ul class="x_lifel clearfix">
+            <li>
+                <h2 class="x_h2st"><a href="#">汽车</a></h2>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_mi.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">小米HTC将发重磅旗舰</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_mi.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">小米HTC将发重磅旗舰</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2 class="x_h2st"><a href="#">科技</a></h2>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_mi.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">小米HTC将发重磅旗舰</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_mi.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">小米HTC将发重磅旗舰</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h2 class="x_h2st"><a href="#">游戏</a></h2>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_mi.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">小米HTC将发重磅旗舰</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="x_life_top">
+                    <a href="#"><img src="img/x_mi.gif" /></a>
+                    <div class="x_l_topn">
+                        <p><a href="#">小米HTC将发重磅旗舰</a></p>
+                        <div class="x_l_tco clearfix">
+                            <i><span></span>7，108</i>
+                            <b>00:58</b>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="x_lifer">
+            <h2 class="x_h2st"><a href="#">专题</a></h2>  
+            <div class="x_special">
+                <ul class="clearfix">
+                    <li class="x_spfirstli">
+                        <a href="#"><img src="img/x_tara.gif" /></a>
+                        <a href="#" class="x_spname">皇冠团T-ARA</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/x_xiaocrazy.gif" /></a>
+                        <a href="#" class="x_spname">皇冠团T-ARA</a>
+                    </li>
+                </ul>
+                <a href="#"><img src="img/x_longzhit.gif" /></a>
+            </div>
+        </div>
+    </div>
+    <!-- 汽车结束 -->
+
+
+   <!--  个人频道开始 -->
+    <div class="pri_channel clearfix">
+        <div class="pri_l">
+            <h2 class="x_h2st"><a href="#">个人频道</a></h2>
+            <ul class="clearfix">
+                <li>
+                    <div class="pri_smtit clearfix">
+                        <a href="#">神马看世界</a>
+                        <i>8,860订阅</i>
+                        <a href="#"><img src="img/x_pic4.gif" /></a>
+                    </div>
+                    <div class="pri_con">
+                        <a href="#"><img src="img/x_car1.gif" /></a>
+                        <h6><a href="#">死亡飞车！高速撞击！与死神擦肩的危险瞬间</a></h6>
+                        <div class="x_spor_c clearfix">
+                            <i><span></span>10.2万</i>
+                            <b><span></span>红牛运动世界</b>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pri_smtit clearfix">
+                        <a href="#">神马看世界</a>
+                        <i>8,860订阅</i>
+                        <a href="#"><img src="img/x_pic4.gif" /></a>
+                    </div>
+                    <div class="pri_con">
+                        <a href="#"><img src="img/x_car1.gif" /></a>
+                        <h6><a href="#">死亡飞车！高速撞击！与死神擦肩的危险瞬间</a></h6>
+                        <div class="x_spor_c clearfix">
+                            <i><span></span>10.2万</i>
+                            <b><span></span>红牛运动世界</b>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pri_smtit clearfix">
+                        <a href="#">神马看世界</a>
+                        <i>8,860订阅</i>
+                        <a href="#"><img src="img/x_pic4.gif" /></a>
+                    </div>
+                    <div class="pri_con">
+                        <a href="#"><img src="img/x_car1.gif" /></a>
+                        <h6><a href="#">死亡飞车！高速撞击！与死神擦肩的危险瞬间</a></h6>
+                        <div class="x_spor_c clearfix">
+                            <i><span></span>10.2万</i>
+                            <b><span></span>红牛运动世界</b>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pri_smtit clearfix">
+                        <a href="#">神马看世界</a>
+                        <i>8,860订阅</i>
+                        <a href="#"><img src="img/x_pic4.gif" /></a>
+                    </div>
+                    <div class="pri_con">
+                        <a href="#"><img src="img/x_car1.gif" /></a>
+                        <h6><a href="#">死亡飞车！高速撞击！与死神擦肩的危险瞬间</a></h6>
+                        <div class="x_spor_c clearfix">
+                            <i><span></span>10.2万</i>
+                            <b><span></span>红牛运动世界</b>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pri_smtit clearfix">
+                        <a href="#">神马看世界</a>
+                        <i>8,860订阅</i>
+                        <a href="#"><img src="img/x_pic4.gif" /></a>
+                    </div>
+                    <div class="pri_con">
+                        <a href="#"><img src="img/x_car1.gif" /></a>
+                        <h6><a href="#">死亡飞车！高速撞击！与死神擦肩的危险瞬间</a></h6>
+                        <div class="x_spor_c clearfix">
+                            <i><span></span>10.2万</i>
+                            <b><span></span>红牛运动世界</b>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="pri_smtit clearfix">
+                        <a href="#">神马看世界</a>
+                        <i>8,860订阅</i>
+                        <a href="#"><img src="img/x_pic4.gif" /></a>
+                    </div>
+                    <div class="pri_con">
+                        <a href="#"><img src="img/x_car1.gif" /></a>
+                        <h6><a href="#">死亡飞车！高速撞击！与死神擦肩的危险瞬间</a></h6>
+                        <div class="x_spor_c clearfix">
+                            <i><span></span>10.2万</i>
+                            <b><span></span>红牛运动世界</b>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pri_r">
+            <p class="prir_tit clearfix">
+                <a href="#">订阅版</a>
+                <a href="#">质量版</a>
+                <a href="#">牛人</a>
+            </p>
+            <ul>
+                <li class="clearfix">
+                    <div class="prir_lpic">
+                        <a href="#"><img src="img/x_bb.jpg" /></a>
+                        <i>1</i>
+                    </div>
+                    <div class="prir_con">
+                        <h6 class="clearfix">
+                            <a href="#">暴走漫画</a>
+                            <i></i>
+                            <span>新增订阅1.55万</span>
+                        </h6>
+                        <p>暴走漫画官方网站:http://baozou.com</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="prir_lpic">
+                        <a href="#"><img src="img/x_bb.jpg" /></a>
+                        <i>2</i>
+                    </div>
+                    <div class="prir_con">
+                        <h6 class="clearfix">
+                            <a href="#">暴走漫画</a>
+                            <i></i>
+                            <span>新增订阅1.55万</span>
+                        </h6>
+                        <p>暴走漫画官方网站:http://baozou.com</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="prir_lpic">
+                        <a href="#"><img src="img/x_bb.jpg" /></a>
+                        <i>3</i>
+                    </div>
+                    <div class="prir_con">
+                        <h6 class="clearfix">
+                            <a href="#">暴走漫画</a>
+                            <i></i>
+                            <span>新增订阅1.55万</span>
+                        </h6>
+                        <p>暴走漫画官方网站:http://baozou.com</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="prir_lpic">
+                        <a href="#"><img src="img/x_bb.jpg" /></a>
+                        <i>4</i>
+                    </div>
+                    <div class="prir_con">
+                        <h6 class="clearfix">
+                            <a href="#">暴走漫画</a>
+                            <i></i>
+                            <span>新增订阅1.55万</span>
+                        </h6>
+                        <p>暴走漫画官方网站:http://baozou.com</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="prir_lpic">
+                        <a href="#"><img src="img/x_bb.jpg" /></a>
+                        <i>5</i>
+                    </div>
+                    <div class="prir_con">
+                        <h6 class="clearfix">
+                            <a href="#">暴走漫画</a>
+                            <i></i>
+                            <span>新增订阅1.55万</span>
+                        </h6>
+                        <p>暴走漫画官方网站:http://baozou.com</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="prir_lpic">
+                        <a href="#"><img src="img/x_bb.jpg" /></a>
+                        <i>6</i>
+                    </div>
+                    <div class="prir_con">
+                        <h6 class="clearfix">
+                            <a href="#">暴走漫画</a>
+                            <i></i>
+                            <span>新增订阅1.55万</span>
+                        </h6>
+                        <p>暴走漫画官方网站:http://baozou.com</p>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="x_pri_more">查看更多频道&gt;&gt;</a>
+        </div>
+   </div>
+   <!--  个人频道结束 -->
+
+    
+    <!-- 视频话题开始 -->
+    <div class="video">
+        <h2 class="x_h2st"><a href="#">视频话题</a></h2>
+        <div class="clearfix">
+            <div class="v_left">
+                <ul class="v_l_top clearfix">
+                    <li class="x_life_top">
+                        <a href="#"><img src="img/x_mi.gif" /></a>
+                        <div class="x_l_topn">
+                            <p><a href="#">小米HTC将发重磅旗舰</a></p>
+                            <div class="x_l_tco clearfix">
+                                <i><span></span>7，108</i>
+                                <b>00:58</b>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="x_life_top">
+                        <a href="#"><img src="img/x_mi.gif" /></a>
+                        <div class="x_l_topn">
+                            <p><a href="#">小米HTC将发重磅旗舰</a></p>
+                            <div class="x_l_tco clearfix">
+                                <i><span></span>7，108</i>
+                                <b>00:58</b>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="x_life_top">
+                        <a href="#"><img src="img/x_mi.gif" /></a>
+                        <div class="x_l_topn">
+                            <p><a href="#">小米HTC将发重磅旗舰</a></p>
+                            <div class="x_l_tco clearfix">
+                                <i><span></span>7，108</i>
+                                <b>00:58</b>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clearfix">
+                    <ul class="v_l_bottom">
+                        <li>
+                            <i></i>
+                            <a href="#">[二斤哥]大碗横空出世 应战一斤哥</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a href="#">[二斤哥]大碗横空出世 应战一斤哥</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a href="#">[二斤哥]大碗横空出世 应战一斤哥</a>
+                        </li>
+                    </ul>
+                    <ul class="v_l_bottom">
+                        <li>
+                            <i></i>
+                            <a href="#">[二斤哥]大碗横空出世 应战一斤哥</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a href="#">[二斤哥]大碗横空出世 应战一斤哥</a>
+                        </li>
+                        <li>
+                            <i></i>
+                            <a href="#">[二斤哥]大碗横空出世 应战一斤哥</a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <ul class="x_sportsr v_right">
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic1.gif" /></a>
+                    <h6><a href="#">[酷玩]单车之神"鬼城"骑行</a></h6>
+                </li>
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic1.gif" /></a>
+                    <h6><a href="#">[酷玩]单车之神"鬼城"骑行</a></h6>
+                </li>
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic1.gif" /></a>
+                    <h6><a href="#">[酷玩]单车之神"鬼城"骑行</a></h6>
+                </li>
+                <li class="clearfix">
+                    <a href="#"><img src="img/x_pic1.gif" /></a>
+                    <h6><a href="#">[酷玩]单车之神"鬼城"骑行</a></h6>
+                </li>
+            </ul>
+        </div> 
+    </div>
+    <!-- 视频话题结束 -->
+
+    <a href="#" class="yk_pic"><img src="img/x_zuiqingdn.gif" /></a>
+
+
+    <!-- 尾部开始 -->
+    <div class="footer">
+        <div class="x_fotop clearfix">
+            <ul class="x_folist">
+                <li class="x_ft1">
+                    <h6>资源</h6>
+                    <p class="clearfix">
+                        <a href="#">电视剧</a>
+                        <a href="#">电影</a>
+                        <a href="#">综艺</a>
+                        <a href="#">动漫</a>
+                        <a href="#">音乐</a>
+                        <a href="#">全部</a>
+                    </p>
+                </li>
+                <li class="x_ft1">
+                    <h6>资源</h6>
+                    <p class="clearfix">
+                        <a href="#">电视剧</a>
+                        <a href="#">电影</a>
+                        <a href="#">综艺</a>
+                        <a href="#">动漫</a>
+                        <a href="#">音乐</a>
+                        <a href="#">全部</a>
+                    </p>
+                </li>
+            </ul>
+            <ul class="x_foli2">
+                <li>
+                   <h6>资源</h6>
+                    <p class="clearfix">
+                        <a href="#">出品</a>
+                        <a href="#">资讯</a>
+                        <a href="#">拍客</a>
+                        <a href="#">体育</a>
+                        <a href="#">汽车</a>
+                        <a href="#">科技</a>
+                        <a href="#">财经</a>
+                        <a href="#">广告</a>
+                        <a href="#">娱乐</a>
+                        <a href="#">原创</a>
+                        <a href="#">游戏</a>
+                        <a href="#">公益</a>
+                        <a href="#">广告</a>
+                        <a href="#">娱乐</a>
+                        <a href="#">原创</a>
+                        <a href="#">游戏</a>
+                        <a href="#">公益</a>
+                    </p> 
+                </li>
+            </ul>
+            <ul class="x_foli2 x_foli3">
+                <li>
+                   <h6>资源</h6>
+                    <p class="clearfix">
+                        <a href="#">PC客户端</a>
+                        <a href="#">优酷iDo</a>
+                        <a href="#">手机客户端</a>
+                        <a href="#">拍客</a>
+                        <a href="#">实验室</a>
+                        <a href="#">开放平台</a>
+                    </p>
+                </li>
+            </ul>
+            <ul class="x_foli2 x_foli4">
+                <li>
+                   <h6>资源</h6>
+                    <p class="clearfix">
+                        <a href="#">PC客户端</a>
+                        <a href="#">优酷iDo</a>
+                        <a href="#">帮助中心</a>
+                    </p>
+                </li>
+            </ul>
+            <ul class="x_forig">
+                <li>
+                    <a href="#">优酷土豆集团</a>
+                    <a href="#">Youku Tudou Inc.</a>
+                    <a href="#">关于优酷</a>
+                    <a href="#">友情链接</a>
+                </li>
+                <li class="x_fo2">
+                    <a href="#">优酷土豆集团</a>
+                    <a href="#">Youku.com</a>
+                    <a href="#">关于优酷</a>
+                    <a href="#">友情链接</a>
+                </li>
+                <li>
+                    <a href="#">优酷土豆集团</a>
+                    <a href="#">Tudou.com</a>
+                    <a href="#">关于优酷</a>
+                    <a href="#">友情链接</a>
+                </li>
+            </ul>
+        </div>
+        <div class="x_fomidd clearfix">
+            <ul class="x_fo_1 clearfix">
+                <li>
+                    <p><i></i>经营性网站备案信息</p>
+                    <p><i></i>经营性网站备案信息</p>
+                    <p><i></i>经营性网站备案信息</p>
+                    <p><i></i>经营性网站备案信息</p>
+                </li>
+                <li>
+                    <p>北京12318文化市场举报热线</p>
+                    <p>北京12318文化市场举报热线</p>
+                    <p>北京12318文化市场举报热线</p>
+                    <p>北京12318文化市场举报热线</p>
+                </li>
+                <li>
+                    <p>网络110报警服务 药品服务许可证(京)-经营-2010-0048</p>
+                    <p>网络110报警服务 药品服务许可证(京)-经营-2010-0048</p>
+                    <p>网络110报警服务 药品服务许可证(京)-经营-2010-0048</p>
+                    <p>网络110报警服务 药品服务许可证(京)-经营-2010-0048</p>
+                </li>
+            </ul>
+            <div class="x_fobott clearfix">
+                <a href="#"><img src="img/a_code.png"/></a>
+                <p class="x_foz">
+                    <i>优酷App</i>
+                    <b>扫描或点击下载</b>
+                </p>
+            </div>
+        </div>
+        <div class="x_fobottom clearfix">
+            <p>请使用者仔细阅读优酷使用协议啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦</p>
+            <p>啦啦啦啦啦啦：4008100580</p>
+        </div>
+
+        
+            
+    </div>
+</body>
+</html>

@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+<style type="text/css">
+     .fa{background: #fafafa;}
+/*xfy*/
+    .x_bor{width: 100%; border-bottom: 1px solid #dfdfdf; margin-bottom: 29px;}
+        .x_headetop{width:980px; margin: 0 auto; }
+        .x_hleft{line-height: 28px; float: left;}
+        .x_hleft h6{float: left; font-weight: bold; margin: 0 12px 0 10px;}
+        .x_hleft .x_city{float: left; color: #73abc9; margin-right: 4px;}
+        .x_hleft p{width: 282px; float: left; color: #666666; background: url(img/x_bg.png) no-repeat; padding-left: 20px;}
+        .x_hleft p a{color: #73abc9;}
+        .x_hleft p .x_close{display: inline-block; width: 12px; height: 12px; background: url(img/x_close.gif) no-repeat right center; padding-left: 12px;}
+        .x_hright li{float: left; color: #c7c7c8; margin-right: 20px; margin-top: 7px; }
+        .x_hright{float: right;}
+        .x_hright li a{color:#73abc9 ; margin-right: 20px;}
+        .x_hright li a:hover{color: #ff658e;}
+        .x_hright{margin-right: 12px;}
+        .x_hright li .x_nuomi{display: inline-block; background: url(img/x_jiao.gif) no-repeat 54px center; width: 60px;}
+        .x_hright .x_mynm{position: relative;}
+        .x_block{display:none; position: absolute; top: 21px; left: -17px; width: 100px; height:100px; border: 1px solid #ff658e; text-align: center; font-size: 14px;}
+        .x_hright li:hover .x_block{display: block; background: #ff658e; color: #fff;} 
+
+        /* 头部中部 */
+        .x_headmiddle{width: 980px;margin: 0 auto; margin-bottom: 9px;}
+        .x_headmiddle .x_hleft h1{width: 312px; height: 41px; background: url(img/x_logo.gif) no-repeat; text-indent: -999px; margin-left: 20px; border-right: 1px solid #dfdfdf;}
+        .x_hmiddle{float: left;width: 409px; height:63px; margin-left: 30px; margin-right: 30px;}
+        .x_sousuo{margin-bottom: 11px;}
+        .x_sousuo .x_text{float: left;width: 296px; height:38px; border: none;  outline:none; border: 1px solid #dfdfdf; padding-left: 14px;}
+        .x_sousuo .x_soso{float: left; display: inline-block; width: 97px; height: 40px; background:url(img/x_soso.gif) no-repeat 7px center #ff658e; color: #fff;  border: 1px solid #fe5986;  padding-left: 14px;}
+        .x_food a{color: #999999; margin-right: 14px;}
+        .x_food a:hover{color: #ff658e;}
+        .x_food{float: left;}
+        .x_hfoot{float: left;}
+        .x_hfoot img{float: left; border:1px solid #fe5986; margin-right: 11px;}
+        .x_hfoot a{float: left; font-size: 15px; color: #ee3768; line-height: 19px;}
+
+
+        .x_bg{width: 100%; background: #ff658e; border: 1px solid #fe5985;}
+        .x_footer{width: 980px;margin: 0 auto; position: relative;}
+        .x_footer p{background: #fafafa; width: 258px;  font-size: 16px; text-align: center; line-height: 47px; position: absolute; left: -1px; top: -4px;border-left: 1px solid #f0f0f0; border-left:1px solid #f0f0f0;border-right:1px solid #f0f0f0;}
+        .x_footer ul{margin-right: -100px;}
+        .x_footer ul li{float: left;position:relative;}
+        .x_footer ul li:hover .x_thro{display:block; background: #ff658e;}
+        .x_footer ul li a{display:block; font-size: 16px; color: #fff; padding: 12px 16px;}
+        .x_footer ul{padding-left: 271px;}
+        .x_footer ul li a:hover{background: #ee3968; height: 18px;}
+        .x_footer ul li span{display: block; width: 26px; height: 17px;background: url(img/x_dz.gif) no-repeat; position: absolute; top: -7px; right: 6px;}
+        .x_footer ul .x_small{font-size: 12px;}
+        .x_footer ul li i{display: block; width: 13px; height: 16px;background: url(img/x_download.gif) no-repeat; position: absolute; top: 10px; left: 2px;}
+        .x_through{background: url(img/x_j2.gif) no-repeat right center; }
+        .x_bg b{display: block;background: url(img/x_j3.gif) no-repeat; width: 5px; height: 7px; position: absolute; top: -7px; left: 259px;}
+        .x_thro{display: none; border: 1px solid #ff658e; position: absolute; top: 43px; left: -8px; width: 100px; height: 150px; text-align: center;}
+/*xfy*/
+/*cy*/
+    .cy_mainnav{width: 980px;/*border:1px solid #e1e2e3;*/margin:0px auto;background:#fafafa;border-bottom: none;}
+    .navleft{width:222px;background:#ffffff url(img/cy_nav_rightbg.png) no-repeat 258px 0px; float:left;}
+	.navleft .item_b{width:219px;height: 44px;/*padding：6px 0 5px 5px;*/}  /*这行无用？*/
+	.navleft{padding:0 20px 30px 20px}
+	.navleft h3 a{display:block;height: 22px;}
+	.navleft li{width:214px;height:45px;padding:6px 0 5px 5px;border-top: 1px solid #f6f6f6;border-bottom:1px solid #f6f6f6;}
+	.navleft .tit {font-size:14px;font-weight: bold;color: #666;padding-left:35px;}
+	.navleft .tit img{margin-bottom: 20px;}
+	.navleft .foods{background:url(img/cy_ico_01.png) no-repeat 0 -2px;}
+	.navleft .film{background:url(img/cy_ico_02.png) no-repeat 0 -2px;;}
+	.navleft .happy{background:url(img/cy_ico_03.png) no-repeat;}
+	.navleft .shoping{background:url(img/cy_ico_04.png) no-repeat;}
+	.navleft .live{background:url(img/cy_ico_05.png) no-repeat;}
+	.navleft .hotel{background:url(img/cy_ico_06.png) no-repeat;}
+	.navleft .travel{background:url(img/cy_ico_07.png) no-repeat;}
+	.navleft .pretty{background:url(img/cy_ico_08.png) no-repeat;}
+	.navleft span{font-size:12px;height:22px;line-height: 22px;padding-left:35px ;}
+	.navright{width:699px;float:right;margin-left: 5px;} 
+	.navright  li a{width:5em;font-size:12px;float:left;border-bottom:1px solid #f3f3f3;height: 42px;line-height: 42px;}
+	.navright .bottom .tit{height:47px;line-height:47px;font-weight:bold;background:url(img/cy_ico_star.png) left center no-repeat;text-indent: 22px;font-size: 16px;}
+	.navright .bottom .btn{margin-top:24px;width: 10px;height: 10px;background:url(img/cy_ico_cricle.png) no-repeat;float:right;margin-right: 13px;;}
+    .red{color:#ff6699;}
+/*cy*/
+    .q-a{ width:980px; height:262px; 
+			border:1px solid #e1e2e3; 
+			margin:11px auto;margin-bottom: 0px;}	
+			
+    	.q-a1{ width:938px; 
+			 border-bottom:1px solid #e1e2e3; 
+			 padding:10px 0px; 
+			 margin-left:20px;
+			 float:left;}
+			 
+    	.q-h1{ width:80px; height:20px;
+			 font-size:20px;}
+			 
+    	.q-p1{ width:36px; height:12px; 
+			 font-size:12px; 
+			 color:#999; 
+			 margin-left:29px;
+			 margin-top:8px;}
+			  
+    	.q-a-a{font-size:12px; 
+			  color:#999; width:31px;
+			  margin-top:8px;}
+			  
+ 		.q-a2{ background:#666;
+			 width:24px; height:22px;
+			 text-align:center;
+			 line-height:22px; 
+			 color:#fff;
+			 border-radius:3px;}
+			    
+    	.q-i{ display:block; 
+			 width:3px; height:10px;
+			 background:url(img/diandian.png) no-repeat;
+			  margin:7px;}
+			  
+    	.q-11{ float:left;}
+		
+    	.q-12{ float:right;}
+		
+		.q-a3{margin-left:9px;}
+		
+		/*精选品牌完成*/
+		
+		.q-ul{ width:938px; float:left;font-family:微软雅黑; padding:10px 20px; }
+		.q-ul img{ border:1px solid #e1e2e3; display:block;}
+		.q-ul-p1{ font-size:16px; margin-top:10px;}
+		.q-ul-span{ font-size:14px; color:#666;}
+		.q-ul-p2{ font-size:18px; color:#fd8e51; margin-top:15px;}
+		.q-ul-a{ display:block;}
+		.q-ul-span1{ text-decoration:line-through;}
+		.q-li{ float:left; margin-left:20px;}
+		.q-li2{ margin-left:0px;}
+		
+		/*图片部分完成*/
+		
+    	.q-a4{ width:980px; margin:0 auto; font-size:12px; font-weight:bold; position:relative;background: #fafafa;padding-bottom: 13px;}
+		.q-a4 a,.q-input1{ float:left;color:#666; margin-top:19px;}
+		.q-a4-a1{ margin-left:20px; margin-right:29px;}
+    	.q-a4-a2{ margin-right:34px;}
+    	.q-a4-a3{ margin-right:40px;}
+		.q-input2{ margin-right:5px;}
+    	.q-a4-a4{ margin-right:10px;}
+		.q-a4-a5{ margin-right:204px;}
+		.q-a4-a6{ margin-left:20px;width: 30px;}
+		.q-a4-a66{margin-left: 67px;}
+		.q-a4-a7{ width:7px; height:10px; 
+				background:url(img/xiajian.png) no-repeat; 
+				position:absolute; top:3px; left:106px;}
+		
+		.q-a4-a8{ width:7px; height:10px;
+				position:absolute;top:3px;left:165px;}
+		
+		.q-a4-a8-div1{width:7px; height:7px; 
+					background:url(img/shangjiao.png) no-repeat;}
+					
+		.q-a4-a8-div2{width:7px; height:7px;
+					 background:url(img/xiajiao2.png) no-repeat; }
+					 
+    	.q-a4-a91{ width:7px; height:10px;
+				 background:url(img/shangjian.png) no-repeat;
+				  position:absolute; top:3px; left:226px;}
+				  
+		.q-a4-a92{ width:7px; height:10px;
+				 background:url(img/shangjian.png) no-repeat;
+				 position:absolute; top:3px; left:313px;}
+		
+    	.q-a4-a10{width:7px; height:10px;
+				 background:url(img/zuojiao.png) no-repeat;
+				 position:absolute; top:4px; right:176px;}
+				 
+		.q-a4-a11{width:7px; height:10px;
+				 background:url(img/youjiao.png) no-repeat;
+				 position:absolute; top:4px; right:16px;}
+		
+		.q-a4-a12{ width:21px; height:15px;
+				 background:url(img/hot.png) no-repeat;
+				 position:absolute; top:-15px; left:540px;}
+    
+    	.q-a4 a:hover{ color:#ff6699;}
+		.q-a4 .nextpage{margin-right:28px;float: right;}
+		/*小导航条部分完成*/
+/*s*/
+    .s_4{border-top:1px solid #cccccc;background:#f2f2f2;}
+.s_4_t{width:980px;margin:0 auto;padding-top: 16px;padding-bottom: 50px;}
+.s_l{width:752px;float: left;}
+.s_l_l{width:358px;height:398px;border:1px solid #eeeeee;background:#fff;position:relative;margin-right:16px;margin-bottom:17px;float:left;}
+.s_4_b{width:980px;margin:0 auto;}
+.s_4_bs{margin-right:-10px;}
+.s_t_l{width:318px;height:372px;border:1px solid #eeeeee;background:#fff;position:relative;margin-right:10px;margin-bottom:12px;float:left;}
+.s_l_l img{width:360px;height:220px;margin-top:-1px;margin-left:-1px;margin-bottom:17px;}
+.s_t_l img{width:320px;height:194px;margin-top:-1px;margin-left:-1px;margin-bottom:17px;}
+.s_name{font-size:16px;margin-left:20px;margin-bottom:11px;font-weight:bold;}
+.s_jieshao{font-size:14px;margin:0 19px;line-height:20px;color:#666666;}
+.s_jiage{margin-left:19px;font-size:14px;color:#666666;margin-top:26px;}
+.s_jiage span{font-size:26px;font-family:'微软雅黑';color:#fd8e51;margin-right:18px;}
+.s_jiage i{text-decoration:line-through;margin-left:6px;font-family:'微软雅黑';}
+.s_num{color:#666666;line-height:30px;border-top:1px solid #eeeeee;margin:0 19px;padding-right:6px;}
+.s_num b{float:right;}
+.s_num span{color:#fe8a4b;float:left;}
+.s_mj{width:44px;height:27px;text-align:center;line-height:27px;background:#ff4876;color:#fff;position:absolute;left:9px;top:-5px;}
+.s_mj_1{width:2px;height:4px;background:url(img/s_5.jpg) no-repeat;position:absolute;left:53px;top:-5px;}
+.s_mj_2{width:41px;height:4px;background:url(img/s_2.jpg) no-repeat;position:absolute;left:11px;top:22px;}
+.s_myy{width:45px;height:27px;text-align:center;line-height:27px;background:#508eff;color:#fff;position:absolute;left:64px;top:-5px;}
+.s_myy_1{width:2px;height:4px;background:url(img/s_5.jpg) no-repeat;position:absolute;left:109px;top:-5px;}
+.s_myy_2{width:41px;height:4px;background:url(img/s_3.jpg) no-repeat;position:absolute;left:68px;top:22px;}
+.s_dtc{width:45px;height:27px;text-align:center;line-height:27px;background:#fcb200;color:#fff;position:absolute;left:119px;top:-5px;}
+.s_dtc_1{width:2px;height:4px;background:url(img/s_5.jpg) no-repeat;position:absolute;left:164px;top:-5px;}
+.s_dtc_2{width:41px;height:4px;background:url(img/s_4.jpg) no-repeat;position:absolute;left:122px;top:22px;}
+.s_m100j{width:170px;height:32px;padding-left:20px;line-height:32px;background:#ff6699;color:#fff;position:absolute;left:-1px;bottom:0px;}
+.s_m100j_1{width:166px;height:4px;background:url(img/s_6.jpg) no-repeat;position:absolute;left:-1px;bottom:-4px;}
+.s_quanwang{width:51px;height:14px;border:1px solid #ff8643;background:#fe8a4b;color:#fff;margin-left:19px;text-align:center;margin-top:4px;}
+.s_quanwang_1{width:4px;height:5px;background:url(img/s_8.jpg) no-repeat;position:absolute;left:72px;top:294px;}
+.s_fl{float:left;}
+.s_jiage b{display:inline-block;width:195px;}
+.s_top{margin-top:1px;margin-bottom:8px;}
+/*s*/
+/*ago*/
+    .ago_r{float: right;/*width: 227px;*/}
+     .ago_r img{width: 227px;}
+    .ago_r li{margin-bottom: 10px;}
+    .ago_nm{width: 227px;height: 186px; position: relative;background: url(img/ago1.gif) no-repeat;}
+    .ago_nm a{font-family: "Microsoft Yahei";position: absolute;}
+    .ago_nm .nm1{left: 22px;top: 17px;color: #666666;}
+    .ago_nm .nm2{left: 55px;top: 43px;color: #fff;font-size: 14px;}
+    .ago_nm .nm3{left: 120px;top: 43px;color: #fff;font-size: 14px;}
+    .ago_nm .nm4{color: #131212;left: 44px;top: 148px;font-size: 15px;}
+    .ago_topic{height: 10px;padding: 15px 0px 16px 10px;}
+    .ago_topic a{font-size: 16px;color: #333333;font-weight: bold;}
+    .ago_topi li{padding:8px 52px 22px 92px;background: url(img/agohot.png) no-repeat 12px;height: 72px;color: #333333;line-height: 26px;border-bottom: 1px solid #f2f2f2;}
+    .ago_topi .agoh2{background: url(img/agoh2.png)no-repeat 12px;}
+    .ago_topi .agoh3{background: url(img/agoh3.png)no-repeat 12px;}
+    .ago_topi .agoh4{background: url(img/agoh4.png)no-repeat 12px;}
+    .ago_topi .agoh5{background: url(img/agoh5.png)no-repeat 12px;}
+    .ago_topi a{font-size: 16px;color: #333333;font-weight: bold;}
+    .ago_topi i{color:#fe74a2;}
+    .ago_topi li p{font-weight: bold;}
+    .ago_g{color: #a2a2a2;font-weight: normal;}
+    .ago_wh{background: #fff;}
+    .ago_rank a{font-size: 15px;color: 333333;}
+    .ago_rank img{margin-bottom: 8px;}
+    .ago_rank li{line-height: 22px;margin-bottom: 10px;background: #fff;}
+    .ago_rank p{margin-left: 15px;width: 201px;}
+    .ago_rank i{color: #ff66b2;font-size: 10px;float: left;}
+    .ago_rank b{color: #ff66b2;}
+    .ago_rank em{color:#999999;float: right;}
+    .agola{margin-top: 5px;padding-top: 7px;height: 22px;padding-bottom: 8px;}
+    .agor{position: relative;}
+    .agorr{position: absolute;left: 0;top:-2;}
+    .ago_p{margin-top: 24px;color: #999999;margin-bottom: 20px;}
+    .ago_p span{color: #ff6699;}
+    .ago_page{margin-left: 296px;height: 30px;color: #ff6699;}
+    .ago_page li{float: left;background: #fff;margin-right: 10px;width: 24px;height: 28px;line-height: 28px;text-align: center;border: 1px solid #fff;}
+    .ago_page li:hover{border:1px solid #666;}
+    .ago_page .last{background: url(img/sjj.png) no-repeat center #fff;}
+    .ago{width: 980px;margin:0 auto;padding-bottom: 50px;}
+/*ago*/
+/*wangc*/
+    .w_box{ background:#fafafa; border-top:1px solid #dbdbdb; border-bottom:1px solid #dbdbdb;}
+    .w_footer{ width:980px;margin:0 auto; height:390px; position:relative;}
+    .w_dl{width:143px;border-left:1px solid #cccccc; height:195px; margin-top:45px; padding-left:26px; padding-top:10px; position:relative; float:left;}
+    .w_dt{ font-size:15px;  padding-bottom:15px; }
+    .w_dd{ padding-top:15px;}
+    .w_dt_a{ color:#666666;}
+    .w_dd_a{ color:#999999;}
+    .w_dd_tu{ width:2px; height:30px;background:url(img/sx.png) no-repeat; position:absolute; top:1px; left:0px;}
+    .w_dl_kf{ width:255px; position:relative;}
+    .kefu{width:249px;height:33px;background:url(img/kefu.png) no-repeat; position:absolute; top:0px; left:0px;}
+    .kefu_dd{ padding-top:54px; padding-left:14px; color:#666666;}
+    .kefu_phone{ height:115px; background:url(img/phone.png) no-repeat;}
+    .dw{ position:absolute; top:166px; left:44px;}
+    .ph_a{ color:#f286a6;display:inline:block; border-right:1px solid #f286a6; padding-right:2px;}
+    .ph_a4{ border-right:none;}
+    .w_p{ position:absolute; top:302px; left:310px;}
+    .w_p_z{ position:absolute; top:370px; left:40px; color:#666666;}
+/*wangc*/
+</style>
+</head> 
+<body>
+<!-- xfy -->
+ <div class="x_header">
+       <!--  头部上部开始 -->
+       <div class="x_bor">
+            <div class="x_headetop clearfix">
+                <div class="x_hleft clearfix">
+                    <h6>北京</h6>
+                    <a href="#" class="x_city">[切换城市]</a>
+                    <p>您正在浏览北京市团购，是否<a href="#">切换城市</a>？<a href="#" class="x_close"></a></p>  
+                </div>
+                <ul class="x_hright clearfix">
+                    <li><a href="#">我的订单</a>|</li>
+                    <li class="x_mynm">
+                        <a href="#" class="x_nuomi">我的糯米</a>|
+                        <div class="x_block">我的糯米</div>
+                    </li>
+                    <li><a href="#">登录</a>|</li>
+                    <li><a href="#">注册</a>|</li>
+                </ul>
+            </div>
+        </div>
+         <!--  头部上部结束 -->
+         <!--  头部中部开始 -->
+        <div class="x_headmiddle clearfix">
+            <div class="x_hleft">
+                <a href="#"><h1>百度糯米</h1></a>
+            </div>
+            <div class="x_hmiddle">
+                <div class="x_sousuo clearfix">
+                    <input type="text" placeholder="小吃快餐" class="x_text" />
+                    <input type="submit" value="搜索"  class="x_soso" />
+                </div>
+                <div class="x_food">
+                    <a href="#">火锅</a><a href="#">蛋糕</a><a href="#">杨国福麻辣烫</a><a href="#">东方宫中国兰州牛肉拉面</a><a href="#">黄记煌三汁焖锅</a>
+                </div>
+            </div>
+            <div class="x_hfoot clearfix">
+                <img src="img/x_pic1.gif">
+                <a href="#">全场随便退<br />独家承诺&gt;&gt;</a>
+            </div>
+        </div>
+        <!--  头部中部结束 -->
+        <!--  头部下部开始 -->
+        <div class="x_bg"> 
+            <div class="x_footer">
+                <p>全部团购分类</p>
+                <b></b>
+                <ul class="clearfix">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">精选品牌</a></li>
+                    <li><a href="#">购物</a></li>
+                    <li>
+                        <a href="#">电影</a>
+                        <span></span>
+                    </li>
+                    <li><a href="#">酒店</a></li>
+                    <li><a href="#">今日新单</a></li>
+                    <li><a href="#">外卖</a></li>
+                    <li>
+                        <a href="#" class="x_small">下载手机版</a>
+                        <i></i>
+                    </li>
+                    <li>
+                        <a href="#" class="x_small x_through">最近浏览</a>
+                        <div class="x_thro">最近浏览</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--  头部下部结束 -->
+    </div>
+<!-- xfy -->
+<!-- cy -->
+<div class="fa">
+<div class="cy_mainnav clearfix">	
+			<ul class="navleft">
+
+				<li class="item_b">
+					<h3><a href="#" class="tit foods">美食</a></h3>
+					<span>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+					</span>
+				</li>
+				<li class="item_b">
+					<h3><a href="#" class="tit film">电影</a></h3>
+					<span>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+					</span>
+				</li>
+				<li class="item_b">
+					<h3><a href="#" class="tit happy">休闲娱乐</a></h3>
+					<span>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+					</span>
+				</li>
+				<li class="item_b">
+					<h3><a href="#" class="tit happy">网购</a></h3>
+					<span>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+					</span>
+				</li>
+				<li class="item_b">
+					<h3><a href="#" class="tit live">生活服务</a></h3>
+					<span>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+					</span>
+				</li>
+				<li class="item_b">
+					<h3><a href="#" class="tit hotel">酒店</a></h3>
+					<span>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+					</span>
+				</li>
+				<li class="item_b">
+					<h3><a href="#" class="tit travel">旅游</a></h3>
+					<span>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+					</span>
+				</li>
+				<li class="item_b" style="border-bottom:none;">
+					<h3><a href="#" class="tit pretty">丽人</a></h3>
+					<span>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+						<a class="item_s" href="#">精选食品</a>
+					</span>
+				</li>
+			</ul>		
+			<div class="navright clearfix">
+				<ul class="top">
+					<li class="clearfix">
+					<a href="#">热门团购：</a>
+					<a href="#" >电影</a>
+					<a href="#" class="red" >自助餐</a>
+					<a href="#">KTV</a>
+					<a href="#" class="red">火锅</a>
+					<a href="#">蛋糕</a>
+					<a href="#" class="red">电影</a>
+					<a href="#">资助</a>
+					<a href="#">KTV</a>
+					<a href="#">火锅</a>
+					<a href="#">蛋糕</a>
+					</li>					
+					<li class="clearfix">
+					<a href="#">全部区域：</a>
+					<a href="#">地铁附近</a>
+					<a href="#">朝阳区</a>
+					<a href="#">海淀区</a>
+					<a href="#">丰台区</a>
+					<a href="#">东城区</a>
+					<a href="#">西城区</a>
+					<a href="#">昌平区</a>
+					<a href="#">通州区</a>
+					<a href="#">顺义区</a>
+					<a href="#">大兴区</a>
+					</li>					
+					<li class="clearfix">
+					<a href="#">热门商圈：</a>
+					<a href="#">通州</a>
+					<a href="#">五道口</a>
+					<a href="#">中关村</a>
+					<a href="#">望京</a>
+					<a href="#">方庄</a>
+					<a href="#">西城</a>
+					<a href="#">昌平</a>
+					<a href="#">通州</a>
+					<a href="#">顺义</a>
+					<a href="#">大兴</a>
+					</li>	
+				</ul>				
+				<div class="bottom">
+					<h3 class="tit">本周精选<span><a class="btn" href="#"></a><a class="btn" href="#"></a><a class="btn" href="#"></a><a class="btn" href="#"></a></span></h3>
+					<img src="img/demo.png" />
+				</div>
+				
+				</div>
+
+		</div>
+<!-- cy -->
+<div class="q-a">
+    
+    	<div class="q-a1 q-11 ">
+        	<h1 class="q-h1 q-11">精选品牌</h1>
+            <p class="q-p1 q-11">距开始</p>
+            <a href="#" class="q-a-a q-12">更多></a>
+           	<div class="q-a2 q-11 q-a3">00</div>
+            <i class="q-i q-11"></i> 
+            <div class="q-a2 q-11">22</div>
+            <i class="q-i q-11"></i>
+            <div class="q-a2 q-11">42</div>
+        </div>
+    
+    	
+        <ul class="q-ul">
+        	<li class="q-li q-li2">
+            	<a href="#" class="q-pic-a">
+                	<img src="img/logo1.jpg">
+                </a>
+            	<a href="#" class="q-ul-p1 q-ul-a">
+                	百叶居&nbsp;
+                    <span class="q-ul-span">
+                    百叶居75元
+                    </span>
+                </a>
+                <a href="#" class="q-ul-p2 q-ul-a">
+                	￥55&nbsp;
+                    <span class="q-ul-span">价值</span>
+                    <span class="q-ul-span q-ul-span1">100</span>
+                </a>
+            </li>
+            
+            <li class="q-li ">
+            	<a href="#" class="q-pic-a">
+                	<img src="img/logo1.jpg">
+                </a>
+            	<a href="#" class="q-ul-p1 q-ul-a">
+                	百叶居&nbsp;
+                    <span class="q-ul-span">
+                    百叶居75元
+                    </span>
+                </a>
+                <a href="#" class="q-ul-p2 q-ul-a">
+                	￥55&nbsp;
+                    <span class="q-ul-span">价值</span>
+                    <span class="q-ul-span q-ul-span1">100</span>
+                </a>
+            </li>
+            
+            <li class="q-li">
+            	<a href="#" class="q-pic-a">
+                	<img src="img/logo1.jpg">
+                </a>
+            	<a href="#" class="q-ul-p1 q-ul-a">
+                	百叶居&nbsp;
+                    <span class="q-ul-span">
+                    百叶居75元
+                    </span>
+                </a>
+                <a href="#" class="q-ul-p2 q-ul-a">
+                	￥55&nbsp;
+                    <span class="q-ul-span">价值</span>
+                    <span class="q-ul-span q-ul-span1">100</span>
+                </a>
+            </li>
+            
+            <li class="q-li">
+            	<a href="#" class="q-pic-a">
+                	<img src="img/logo1.jpg">
+                </a>
+            	<a href="#" class="q-ul-p1 q-ul-a">
+                	百叶居&nbsp;
+                    <span class="q-ul-span">
+                    百叶居75元
+                    </span>
+                </a>
+                <a href="#" class="q-ul-p2 q-ul-a">
+                	￥55&nbsp;
+                    <span class="q-ul-span">价值</span>
+                    <span class="q-ul-span q-ul-span1">100</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <!--图片部分完成-->
+    
+	<div class="q-a4 clearfix">
+    	<a href="#" class="q-a4-a1">默认</a>
+    	<a href="#" class="q-a4-a2">销量</a>
+        <a href="#" class="q-a4-a2">价格</a>
+        <a href="#" class="q-a4-a2">折扣</a>
+        <a href="#" class="q-a4-a3">最新发布</a>
+        <input class="q-input1 q-input2" type="checkbox" />
+        <a href="#" class="q-a4-a4">免预约</a>
+        <input class="q-input1 q-input2" type="checkbox" />
+        <a href="#" class="q-a4-a4">代金券</a>
+    	<input class="q-input1 q-input2" type="checkbox" />
+        <a href="#" class="q-a4-a5">全网低价</a>
+        <a href="#" class="q-a4-a66">上一页</a>
+        <a href="#" class="q-a4-a6">1/494</a>
+        <a href="#"class="nextpage">下一页</a>
+        
+       	<a href="#" class="q-a4-a7"></a>
+        <a href="#" class="q-a4-a8">
+        	<div class="q-a4-a8-div1"></div>
+            <div class="q-a4-a8-div2"></div>
+        </a>
+        <a href="#" class="q-a4-a91"></a>
+      	<a href="#" class="q-a4-a92"></a>
+        <a href="#" class="q-a4-a10"></a>
+        <a href="#" class="q-a4-a11"></a>
+        <a href="#" class="q-a4-a12"></a>
+    </div>
+   </div> 
+    <!--小导航条部分完成-->
+
+<!-- ago -->
+  <div class="s_4">
+	<div class="s_4_t clearfix">
+		<div class="s_l clearfix">
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+			<div class="s_l_l">
+				<img src="img/s_1.jpg" alt=""/>
+				<p class="s_name">【多店通用】<a href="#">吉野家</a></p>
+				<p class="s_jieshao">三杯鸡（含米饭）！入味鲜美肌肉，精心制作，美味不容错过</p>
+				<p class="s_jiage"><span>￥14.5</span>价值<i>￥29</i></p>
+				<p class="s_num">3974人已团购</p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+				<div class="s_m100j">满100减10</div>
+				<i class="s_m100j_1"></i>
+			</div>
+		</div>
+        <div class="ago_r">
+    <ul>
+     <li class="ago_nm">
+        <a href="#" class="nm1">百度糯米手机版App</a>
+        <a href="#" class="nm2">iPhone</a>
+        <a href="#" class="nm3">Android</a>
+        <a href="#" class="nm4">下载百度糯米手机版</a>
+     </li>
+  	 <li><a href="#"><img src="img/ago2.gif" /></a></li>
+  	 <li><a href="#"><img src="img/ago3.gif" /></a></li>
+  	 <li><a href="#"><img src="img/ago4.gif" /></a></li>
+    </ul>
+    <div class="ago_wh">
+    	<h3 class="ago_topic"><a href="#">热门专题</a></h3>
+    	<ul class="ago_topi">
+    		<li>
+    			<a href="#">热辣火锅</a>
+    			<p>从嘴暖到心</p>
+    			<p class="ago_g"><i>2701664</i>人团购</p>
+    		</li>
+    		<li class="agoh2">
+    			<a href="#">热辣火锅</a>
+    			<p>从嘴暖到心</p>
+    			<p class="ago_g"><i>2701664</i>人团购</p>
+    		</li>
+    		<li class="agoh3">
+    			<a href="#">热辣火锅</a>
+    			<p>从嘴暖到心</p>
+    			<p class="ago_g"><i>2701664</i>人团购</p>
+    		</li>
+    		<li class="agoh4">
+    			<a href="#">热辣火锅</a>
+    			<p>从嘴暖到心</p>
+    			<p class="ago_g"><i>2701664</i>人团购</p>
+    		</li>
+    		<li class="agoh5">
+    			<a href="#">热辣火锅</a>
+    			<p>从嘴暖到心</p>
+    			<p class="ago_g"><i>2701664</i>人团购</p>
+    		</li>
+    	</ul>
+    </div>
+    <div>
+    	<h3 class="ago_topic"><a href="#">热门排行</a></h3>
+    	<ul class="ago_rank">
+    		<li>
+    			<a href="#" class="agor"><img src="img/agorank.gif" /></a>
+    			<p class="agoco"><a href="#">【COSTA COFFEE】手调类饮品1杯！英伦第一品牌，7城联动</a></p>
+    			<p class="clearfix agola"><i>￥25</i> <em>每天<b>10123</b>人团购</em></p>
+    		</li>
+    		<li>
+    			<a href="#" class="agor"><img src="img/agora2.gif" /></a>
+    			<p class="agoco"><a href="#">【COSTA COFFEE】手调类饮品1杯！英伦第一品牌，7城联动</a></p>
+    			<p class="clearfix agola"><i>￥25</i> <em>每天<b>10123</b>人团购</em></p>
+    		</li>
+    	</ul>
+    </div>
+ </div>
+		</div>
+		<div class="s_4_b clearfix">
+			<div class="s_4_bs">
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			<div class="s_t_l">
+				<img src="img/s_7.jpg" alt=""/>
+				<p class="s_name">【7店通用】<a href="#">棒约翰比萨</a></p>
+				<p class="s_jieshao">超值套餐！优质原料，细细品尝，美味独享，做快乐吃货，美味不错过，享受好心情！</p>
+				<p class="s_quanwang">全网低价</p>
+				<i class="s_quanwang_1"></i>
+				<p class="s_jiage clearfix s_top"><span class="s_fl">￥55.1</span><b class="s_fl">团购价<i>￥58</i></b><b class="fl">价值<i>￥127</i></b></p>
+				<p class="s_num clearfix"><span>比美团点评等团购网站低2.9元</span><b>3974人已团购</b></p>
+				<div class="s_mj">满减</div>
+				<i class="s_mj_1"></i>
+				<i class="s_mj_2"></i>
+				<div class="s_myy">免预约</div>
+				<i class="s_myy_1"></i>
+				<i class="s_myy_2"></i>
+				<div class="s_dtc">多套餐</div>
+				<i class="s_dtc_1"></i>
+				<i class="s_dtc_2"></i>
+			</div>
+			</div>
+		</div><div class="ago">
+<p class="ago_p">共<span>44439</span>条/每页 90条</p>
+<ul class="ago_page clearfix">
+	<li><a href="#">1</a></li>
+	<li><a href="#">2</a></li>
+	<li><a href="#">3</a></li>
+	<li><a href="#">4</a></li>
+	<li><a href="#">5</a></li>
+	<li><a href="#">6</a></li>
+	<li><a href="#">7</a></li>
+	<li><a href="#">8</a></li>
+	<li><a href="#">9</a></li>
+	<li><a href="#">10</a></li>
+	<li class="last"><a href="#"></a></li>
+</ul>
+</div>
+</div>
+
+ <!-- ago -->
+ <!-- wangc -->
+  <div class="w_box clearfix">
+	<div class="w_footer">
+    	<dl class="w_dl">
+        	<dt class="w_dt"><a href="#" class="w_dt_a">用户帮助</a></dt>
+            	<dd class="w_dd_tu"></dd>
+            	<dd class="w_dd"><a href="#" class="w_dd_a">常见团购问题</a></dd>
+                <dd class="w_dd"><a href="#" class="w_dd_a">开放API</a></dd>
+            
+        </dl>
+        <dl class="w_dl">
+        	<dt class="w_dt"><a href="#" class="w_dt_a">手机百度糯米</a></dt>
+            	<dd class="w_dd_tu"></dd>
+            	<dd class="w_dd"><a href="#" class="w_dd_a">百度糯米触屏版</a></dd>
+                <dd class="w_dd"><a href="#" class="w_dd_a">下载手机版</a></dd>
+            
+        </dl>
+        <dl class="w_dl">
+        	<dt class="w_dt"><a href="#" class="w_dt_a">商务合作</a></dt>
+            	<dd class="w_dd_tu"></dd>
+            	<dd class="w_dd"><a href="#" class="w_dd_a">友情链接</a></dd>
+                <dd class="w_dd"><a href="#" class="w_dd_a">市场合作</a></dd>
+            
+        </dl>
+        <dl class="w_dl">
+        	<dt class="w_dt"><a href="#" class="w_dt_a">公司信息</a></dt>
+            	<dd class="w_dd_tu"></dd>
+            	<dd class="w_dd"><a href="#" class="w_dd_a">关于百度糯米</a></dd>
+                <dd class="w_dd"><a href="#" class="w_dd_a">百度糯米新浪微博</a></dd>
+                <dd class="w_dd"><a href="#" class="w_dd_a">人人网公共首页</a></dd>
+                <dd class="w_dd"><a href="#" class="w_dd_a">廉政反馈</a></dd>
+            
+        </dl>
+       <dl class="w_dl w_dl_kf">
+        	<dt class="kefu"></dt>
+            	<dd class="kefu_dd">客服电话 免长途费  周一至周日9：00-22:00</dd>
+                <dd class="kefu_phone"></dd>
+                <dd class="dw">
+                	<a href="#" class="ph_a">iPhone</a>
+                    <a href="#" class="ph_a">Android</a>
+                    <a href="#" class="ph_a">ipad</a>
+                    <a href="#" class="ph_a ph_a4">更多</a>
+                   
+                </dd>
+        </dl>
+        <p class="w_p">
+        	<a href="#"><img src="img/w_1.png" /></a>
+            <a href="#"><img src="img/w_2.png" /></a>
+            <a href="#"><img src="img/w_3.png" /></a>
+        </p>
+        <p class="w_p_z">@2014 numi.com 京互联网药品信息服务资格证编号（京-经营性-2011-00009）京互联网药品信息服务资格证编号（京-经营性-2011-00009）</p>
+    </div>
+</div>
+<!-- wangc -->
+</body>
+</html>

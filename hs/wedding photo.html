@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <style>
+        /* 头部 */
+        .h_bg{background: url(img/bg.gif);height: 120px;}
+        .h_thead{width: 961px; margin: 0 auto;}
+        .h_thead h1{ width:185px; height: 96px; background: url(img/h_logo.gif) no-repeat 81px 0px; text-indent: -999px; padding-left: 81px; float: left; margin-right: 206px;}
+        .h_thead img{float: left; margin-top: 42px;}
+
+
+
+        .gift{position: fixed; right: 0; bottom: 50%;}
+
+        .h_nav{height: 42px; background:url(img/h_bg.gif) ;}
+        .h_list{width: 961px; margin: 0 auto;}
+        .h_list li{float: left;  line-height: 42px; }
+        .h_list li a{color: #e5d4cb; font-size: 14px; border-right: 1px solid #74472d;padding: 0 17px;}
+        .h_list li a:hover{color: #eeb88c;}
+        .h_list .h_listr{background: url(img/h_shoucang.gif) no-repeat; display: block; width: 44px; height: 24px; float: right; color: #aa7f5f; text-align: center; line-height: 24px; margin-top: 8px;}
+        .h_list ul{float: left;}
+        .m_picture{display:block; margin-bottom: 44px;}
+        
+        /* 中间图片部分 */
+        .content{width: 961px; margin: 0 auto;}
+        .m_pic{display:block; margin-bottom:15px;}
+        .m_photo a{ float: left; margin-bottom: 15px;}
+        .m_photo img{width: 310px; height: 310px;}
+        .m_sec{margin: 0 15px;}
+        .m_banner{display:block; margin-bottom: 20px;}
+
+        
+        /* 场馆介绍 */
+        .introduce{margin-bottom: 31px;}
+        .c_tit img{width:214px; height: 55px; }
+        .c_tit{margin-bottom: 16px;}
+        /* .c_tit{border-bottom: 1px solid #dbdbdb;} */
+        .c_tit .c_titp{float: left;}
+        .c_tit ul{float: left; margin-left: 559px;}
+        .c_tit ul li{float: left;}
+        .c_tit ul li a{color: #787878; border-right: 1px solid #ba9bba; padding: 0 11px; line-height: 28px;}
+        .c_tit .tangc{border-right: none;}
+        .c_tit ul li a:hover{color: #ba1911;}
+        .c_lven a img{width: 310px; height: 497px;}
+        .c_lven{position: relative; float: left; margin-right: 15px;}
+        .c_lven .c_name{position: absolute; bottom: 13px; left: 236px; font-size: 16px; color: #fff;}
+        .c_lven .c_name1{position: absolute; bottom: 13px; left: 222px; font-size: 16px; color: #fff;}
+        .c_venue .c_bl_bg{width: 310px; height: 41px; position: absolute; bottom: 0px; left: 0px; background: #000; opacity: 0.5;}
+        .c_lven .c_name:hover{color: #ffa8c7;}
+        .c_lven .c_name1:hover{color: #ffa8c7;}
+        .c_rven{float: left;}
+        .c_rven ul li{border: 1px solid #e5e5e5;}
+        .c_rven li img{width: 300px; height: 170px;  padding: 4px 4px 37px;}
+        .c_rven li .rven_name{margin-left: 7px; padding-bottom: 12px;display: block; color: #787878;}
+        .c_rven li:hover .rven_name{color: #ba1911;}
+        .c_rven li:hover{background: #dbd7d7;}
+        .c_rven li{ float: left;}
+        .c_rven .r_ul1{margin-bottom: 20px;}
+        .c_rven .r_li1{margin-right: 15px;}
+
+
+       /* 客片欣赏 */
+        .nonnative_slices li img{width:215px; height: 350px;  padding: 6px 6px 28px;}
+        .nonnative_slices .k_slices{display: block; color: #787878; margin-left: 9px; padding-bottom: 10px;}
+        .nonnative_slices li{ float: left;border:1px solid #e5e5e5 ; margin-right: 14px; margin-bottom: 16px;}
+        .nonnative_slices .fo_li{margin-right:0;}
+        .nonnative_slices li:hover .k_slices{color: #ba1911;}
+        .nonnative_slices li:hover {background: #dbd7d7;}
+
+        /* 服务报价 */
+        .c_tit img{width:214px; height: 55px; }
+        .serve{margin-bottom: 28px;}
+        .c_tit{margin-bottom: 16px;}
+        .s_tit{margin-bottom: 13px;}
+        .s_tit .more{float: right; color: #787878;}
+        .s_tit .more:hover{color: #ba1911;}
+        .s_tmain{margin-bottom: 20px;}
+        .s_main .s_tpic img{width: 300px; height: 183px; padding: 4px 4px 37px;}
+        .s_tpic p .s_price{color: #787878; margin-left: 7px;}
+        .s_main .s_tpic:hover{background: #dbd7d7;}
+        .s_main .s_tpic:hover .s_price{color:#ba1911 ;}
+        .s_tpic p{padding-bottom: 12px;}
+        .s_tpic p .s_rmb{color: #ba1911; font-weight: bold; font-size: 14px; margin-left: 56px;}
+        .s_main .s_tpic{float: left; border: 1px solid #e5e5e5;}
+        .s_main .s_tp{float: left; width: 620px; height: 218px;line-height: 24px; margin-left: 20px;}
+        .s_main .s_tp h2{font-size: 16px; font-weight: bold; color: #3c2112;}
+        .s_main .s_tp p{font-size: 14px; }
+        .s_main .s_tp a{font-size: 14px; text-align: right; display: block; color: #83471d;}
+        .s_main .s_tp a:hover{color:#ba1911 ;}
+
+        .s_bmain li img{width: 300px; height: 183px;padding: 4px 4px 37px;}
+        .s_bmain p .s_price{color: #787878; margin-left: 7px;}
+        .s_bmain li:hover .s_price{color:#ba1911 ;}
+        .s_bmain li:hover{background: #dbd7d7; }
+        .s_bmain p{padding-bottom: 12px;}
+        .s_bmain p .s_rmb{color: #ba1911; font-weight: bold; font-size: 14px; margin-left: 56px;}
+        .s_main .s_bmain{float: left;}
+        .s_main .s_bmain li{float: left; border: 1px solid #e5e5e5;}
+        .s_bmain p a{color:#787878;}
+        .s_bmain .s_li1{margin: 0 15px;}
+
+        /* 积分商城 */
+        .j_list{width: 489px;}
+        .j_list li{width: 148px; height: 133px; border: 1px solid #e5e5e5; float: left; margin-bottom: 13px;}
+        .j_list li img{width: 140px; height: 105px;margin-top: 4px; margin-left:4px;}
+        .j_list .j_name{color: #787878; line-height: 24px;margin-left: 5px;}
+        .j_list li:hover{background: #416ff1;}
+        .j_list li:hover .j_name{color: #fff;}
+        .j_list .j_li1{margin: 0 10px;}
+        .j_tit .j_middle{margin-left: 395px;}
+        .j_tit .j_right{margin-left: 163px;}
+        .j_tit{margin-bottom: 13px;}
+        .j_weibo{float: left; width: 218px; height: 274px; border: 1px solid #e5e5e5; }
+        .j_list{float: left;}
+        .j_wtop{margin: 16px 0 21px 15px;}
+        .j_wtop .j_mnls{display: block; color: #5093d5; font-size: 14px; margin-bottom: 14px;}
+        .j_wtop .j_close{display: block; width: 61px; height: 22px; font-size: 14px; color: #fff; background: #fa4653; border: 1px solid #e8192d; font-weight: bold; text-align: center; line-height: 22px;}
+        .j_wtop .j_left{float: left; margin-right: 10px;}
+        .j_wtop .j_right{float: left;}
+        .j_wmiddle .j_bor{width: 186px;border: 1px solid #e5e5e5;margin-left: 10px; position: relative;border-bottom: 14px;} 
+        .j_wmiddle .j_bor p{width: 166px; line-height: 28px; margin: 8px 10px 10px;}
+        .j_bor span{display: block; width: 198px; height: 8px; background: url(img/top.gif) no-repeat;position: absolute; top: -8px; left: -6px;}
+        .j_bor i{display: block; width: 198px; height: 8px; background: url(img/bottom.gif) no-repeat;position: absolute; bottom: -8px; left: -6px;}
+        .j_wbottom{width: 188px; height: 94px; margin-left: 15px;}
+        .j_wbottom .fans_t{margin-bottom: 14px;}
+        .j_wbottom .fans_t p{float: left;}
+        .j_wbottom .fans_t a{float: right; color: #5093d5;}
+        .fans_b .name{display: block; color:#5093d5 ;}
+        .fans_b li img{margin-bottom: 8px;}
+        .fans_b li{float: left;}
+        .fans_b .f_list1{margin-left:3px ;}
+        .fans_b .f_list2{margin: 0 16px;}
+        .fans_b .f_list3{margin-right:3px ;}
+        .j_tips{float:left; margin-left: 16px;}
+        .j_tips li{background: url(img/dian.gif) no-repeat left center; padding-left: 5px;}
+        .j_tips li a{color:#787878 ; font-size: 14px; line-height: 28px;}
+        .j_tips li a:hover{color:#ba1911 ;}
+        
+
+        /* 友情链接 */
+        .firendlink{margin-bottom: 22px;}
+        .firendlink .link a{margin-right: 27px; color:#83471d; line-height: 24px;}
+        .firendlink .link a:hover{color:#ba1911 ;}
+
+        /* 底部 */
+        .foor_t{width: 100%; height: 175px; background:#eeeeee; border-top: 1px solid #dddddd;}
+        .fo_content{width: 961px; margin: 0 auto; margin-top: 21px; }
+        .fo_list dl{float: left; margin-right: 20px;}
+        .fo_content dt{ border-bottom: 1px solid #705c51; width: 118px; padding-bottom: 13px; margin-bottom: 14px;}
+        .fo_content dt a{font-size: 14px; color: #787878; font-weight: bold;}
+        .fo_content dd a{color: #787878; line-height: 24px;}
+        .fo_content dt a:hover{color:#ba1911  ;}
+        .fo_content dd a:hover{color:#ba1911  ;}
+        .fo_list{float: left; width: 577px; border-right: 1px solid #b1b0b1;}
+        .fo_r{float: left; width: 324px; margin-left: 36px;}
+        .le_pic{float: left; margin-right: 12px;}
+        .fo_rtr{float: left;}
+        .fo_rtr h2{font-weight: bold; font-size: 16px; color: #a7a7a8; margin-bottom: 7px;}
+        .time{color: #999a9a; font-size: 14px;line-height: 15px;}
+        .time span{font-weight: bold; font-size: 16px;}
+        .site{color:#9a6735 ; font-size: 13px; font-weight: bold; line-height: 15px;}
+        .fo_rt{margin-bottom: 17px;}
+
+        .foot_b{width: 100%; height: 123px;background: #3c2112;}
+        .f_content{width: 961px; margin: 0 auto; padding-top: 20px;}
+        .f_content p{text-align: center; color: #fff; line-height: 22px;}
+    </style>
+</head>
+<body>
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="h_bg">
+            <div class="h_thead clearfix">
+                <h1>蒙娜丽莎</h1>
+                <img src="img/2.gif" />
+            </div>
+        </div>
+        <div class="gift">
+            <a href="#"><img src="img/gift.png" /></a>
+        </div>
+            <!-- 头部结束 -->
+            <!-- 导航开始 -->
+        <div class="h_nav">
+            <div class="h_list clearfix">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">影楼报价</a></li>
+                    <li><a href="#">作品展示</a></li>
+                    <li><a href="#">场馆介绍</a></li>
+                    <li><a href="#">客片欣赏</a></li>
+                    <li><a href="#">积分商城</a></li>
+                    <li><a href="#">官方汇款</a></li>
+                    <li><a href="#">网络预约</a></li>
+                    <li><a href="#">官方微博</a></li>
+                </ul>
+                <a href="#" class="h_listr">收藏</a>
+            </div>
+        </div>
+     </div>
+     
+            <!-- 导航结束 -->
+        <a href="#" class="m_picture"><img src="img/pic_big.jpg" ></a>
+
+        <!-- 中间图片部分开始 -->
+    <div class="content">
+        <div>
+            <a href="#" class="m_pic"><img src="img/picture.gif" / ></a>
+            <div class="m_photo clearfix">
+                <a href="#"><img src="img/zhuanxiang.jpg"  / ></a>
+                <a href="#" class="m_sec"><img src="img/hs.jpg" / ></a>
+                <a href="#"><img src="img/tiffany.jpg" / ></a>
+            </div>
+            <a href="#" class="m_banner"><img src="img/banner.jpg" / ></a>
+        </div>
+        <!-- 中间图片部分结束 -->
+
+        <!-- 场馆介绍开始 -->
+        <div class="introduce">
+            <div class="c_tit clearfix">
+                <a href="#" class="c_titp"><img src="img/hometitle_03.gif"  /></a>
+                <ul>
+                    <li><a href="#">北京</a></li>
+                    <li><a href="#">洛阳</a></li>
+                    <li><a href="#">西安</a></li>
+                    <li><a href="#" class="tangc">唐山</a></li>
+                </ul>
+            </div>
+            <div class="c_venue clearfix">
+                <div class="c_lven">
+                    <a href="#"><img src="img/2014-11-01-17-36-10.jpg"  /></a>
+                    <div class="c_bl_bg"></div>
+                    <a href="#" class="c_name">场馆包间</a>
+                </div>
+                <div class="c_rven">
+                    <ul class="clearfix r_ul1">
+                        <li class="r_li1">
+                            <a href="#"><img src="img/2014-11-01-17-26-23.jpg" /></a>
+                            <a href="#" class="rven_name">洛丽塔</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/2014-11-01-17-43-05.jpg" /></a>
+                            <a href="#" class="rven_name">克里斯汀</a>
+                        </li> 
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="r_li1">
+                            <a href="#"><img src="img/2014-11-01-17-30-11.jpg"  /></a>
+                            <a href="#" class="rven_name">夏·宫</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/2014-11-01-17-40-57.jpg"/></a>
+                            <a href="#" class="rven_name">伯爵庄园</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 场馆介绍结束 -->
+
+        <!-- 外景介绍开始 -->
+        <div class="introduce">
+            <div class="c_tit clearfix">
+                <a href="#" class="c_titp"><img src="img/hometitle_06.gif"  /></a>
+                <ul>
+                    <li><a href="#">北京</a></li>
+                    <li><a href="#">洛阳</a></li>
+                    <li><a href="#">西安</a></li>
+                    <li><a href="#" class="tangc">唐山</a></li>
+                </ul>
+            </div>
+            <div class="c_venue clearfix">
+                <div class="c_lven">
+                    <a href="#"><img src="img/2014-08-15-14-02-54.jpg"  /></a>
+                    <div class="c_bl_bg"></div>
+                    <a href="#" class="c_name1">婚礼纪实风</a>
+                </div>
+                <div class="c_rven">
+                    <ul class="clearfix r_ul1">
+                        <li class="r_li1">
+                            <a href="#"><img src="img/2014-08-13-20-09-36.jpg" /></a>
+                            <a href="#" class="rven_name">曼谷乐园</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/2014-08-09-13-39-59.jpg" /></a>
+                            <a href="#" class="rven_name">印象风</a>
+                        </li> 
+                    </ul>
+                    <ul class="clearfix">
+                        <li class="r_li1">
+                            <a href="#"><img src="img/2014-08-15-14-00-32.jpg"  /></a>
+                            <a href="#" class="rven_name">婚礼纪实风</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/2014-07-18-11-47-06.jpg"/></a>
+                            <a href="#" class="rven_name">浪漫花海</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 外景介绍结束 -->
+
+        <!-- 客片欣赏开始 -->
+        <div class="enjoy">
+            <div class="c_tit clearfix">
+                <a href="#" class="c_titp"><img src="img/hometitle_08.gif"  /></a>
+                <ul>
+                    <li><a href="#">北京</a></li>
+                    <li><a href="#">洛阳</a></li>
+                    <li><a href="#">西安</a></li>
+                    <li><a href="#" class="tangc">唐山</a></li>
+                </ul>
+            </div>
+            <ul class="nonnative_slices">
+                <li>
+                    <a href="#"><img src="img/2014-05-23-12-30-08.jpg" /></a>
+                    <a href="#" class="k_slices">客片4</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/2014-10-31-17-35-11.jpg" /></a>
+                    <a href="#" class="k_slices">客片1</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/2014-10-31-17-37-01.jpg" /></a>
+                    <a href="#" class="k_slices">客片3</a>
+                </li>
+                <li class="fo_li">
+                    <a href="#"><img src="img/2014-10-31-17-38-48.jpg" /></a>
+                    <a href="#" class="k_slices">客片2</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/2014-10-31-17-40-02.jpg" /></a>
+                    <a href="#" class="k_slices">客片</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/2014-05-23-12-56-04.jpg" /></a>
+                    <a href="#" class="k_slices">青春的回忆</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/2014-05-23-12-47-52.jpg" /></a>
+                    <a href="#" class="k_slices">绿</a>
+                </li>
+                <li class="fo_li">
+                    <a href="#"><img src="img/2014-10-31-17-41-22.jpg" /></a>
+                    <a href="#" class="k_slices">客片</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 客片欣赏结束 -->
+        
+        <!-- 服务报价开始 -->
+        <div class="serve">
+            <div class="s_tit clearfix">
+                <a href="#" class="c_titp"><img src="img/hometitle_11.gif"  /></a>
+                <a href="#" class="more">&gt;&gt;更多报价</a>
+            </div>
+            <div class="s_main clearfix">
+                <div class="s_tmain clearfix">
+                    <div class="s_tpic">
+                        <a href="#"><img src="img/2014-11-01-17-51-42.jpg" /></a>
+                        <p>
+                            <a href="#" class="s_price">原价26666，网络特惠价10999</a>
+                            <a href="#" class="s_rmb">RMB:10999</a>
+                        </p>
+                    </div>
+                    <div class="s_tp">
+                        <h2>蒙娜丽莎“克里斯汀会所</h2>
+                        <p>1995年，中国和新加坡金尼影像合力打造的蒙娜丽莎在西安创立，凭借专业先进的摄影技术和贴心周到的服务，孕育出“美丽感动一生”的企业文化，成为婚纱摄影行业的领航者。短短几...<br />
+        北京婚纱摄影请选择蒙娜丽莎，贵族的品质和实在的价格让您不会错过它。如果你浏览了所有婚纱照您才会发现，蒙娜丽莎才是您一直在寻找的感觉！<br />
+        到的服务，孕育出“美丽感动一生”的企业文化，成为婚纱摄影行业的领航者。短短几北京婚纱摄影请选择蒙娜丽莎，贵族的品质和实在的价格让您不会错过它。如果你浏览了所有婚纱照您才会发现，蒙娜丽莎才是您一直在寻找的感觉！
+                        </p>   
+                        <a href="#">&gt;&gt;详情介绍</a> 
+                    </div>
+                </div>
+                <ul class="s_bmain clearfix">
+                    <li>
+                        <a href="#"><img src="img/2014-11-01-17-56-49.jpg" /></a>
+                        <p>
+                            <a href="#" class="s_price">原价26666，网络特惠价10999</a>
+                            <a href="#" class="s_rmb">RMB:10999</a>
+                        </p>
+                    </li>
+                    <li class="s_li1">
+                        <a href="#"><img src="img/2014-11-01-17-53-05.jpg" /></a>
+                        <p>
+                            <a href="#" class="s_price">原价26666，网络特惠价10999</a>
+                            <a href="#" class="s_rmb">RMB:10999</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/2013-06-06-16-35-45.jpg" /></a>
+                        <p>
+                            <a href="#" class="s_price">原价26666，网络特惠价10999</a>
+                            <a href="#" class="s_rmb">RMB:10999</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 服务报价结束 -->
+
+        <!-- 积分商城开始 -->
+        <div class="clearfix">
+            <div class="j_tit">
+                <a href="#" class="c_titp"><img src="img/hometitle_14.gif"  /></a>
+                <a href="#" class="c_titp j_middle"><img src="img/hometitle_17.gif"  /></a>
+                <a href="#" class="c_titp j_right"><img src="img/hometitle_19.gif"  /></a>
+            </div>
+            <ul class="clearfix j_list">
+                <li>
+                    <a href="#"><img src="img/2013-06-07-10-16-02.jpg" /></a>
+                     <a href="#" class="j_name">Chanel 香奈儿No5女...</a>
+                </li>
+                <li class="j_li1">
+                    <a href="#"><img src="img/2013-06-07-10-16-02.jpg" /></a>
+                    <a href="#" class="j_name">Chanel 香奈儿No5女...</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/2013-06-07-10-16-02.jpg" /></a>
+                    <a href="#" class="j_name">Chanel 香奈儿No5女...</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/2013-06-07-10-16-02.jpg" /></a>
+                    <a href="#" class="j_name">Chanel 香奈儿No5女...</a>
+                </li>
+                <li class="j_li1">
+                    <a href="#"><img src="img/2013-06-07-10-16-02.jpg" /></a>
+                    <a href="#" class="j_name">Chanel 香奈儿No5女...</a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/2013-06-07-10-16-02.jpg" /></a>
+                    <a href="#" class="j_name">Chanel 香奈儿No5女...</a>
+                </li>
+            </ul>
+            <div class="j_weibo clearfix">
+                <div class="j_wtop clearfix">
+                    <a href="#" class="j_left"><img src="img/mnls.gif" /></a>
+                    <div class="j_right">
+                        <a href="#" class="j_mnls">北京蒙娜丽莎摄影</a>
+                        <a href="#" class="j_close">+加关注</a>
+                    </div>
+                </div>
+                <div class="j_wmiddle">
+                    <div class="j_bor">
+                        <a href="#"><span></span></a>
+                        <p>如果有朋友需要，我推荐蒙娜丽莎，真的很棒</p>
+                        <a href="#"><i></i></a>
+                    </div>
+                </div>
+                <div class="j_wbottom">
+                    <div class="fans_t clearfix">
+                        <p>TA的粉丝(126847)</p>
+                        <a href="#">全部&gt;&gt;</a>
+                    </div>
+                <ul class="fans_b clearfix">
+                    <li class="f_list1">
+                        <img src="img/fans.gif" />
+                        <a href="#" class="name">弓長VS</a>
+                    </li>
+                    <li class="f_list2">
+                        <img src="img/fans.gif" />
+                        <a href="#" class="name">弓長VS</a>
+                    </li>
+                    <li class="f_list3">
+                        <img src="img/fans.gif" />
+                        <a href="#" class="name">弓長VS</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <ul class="j_tips">
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+                <li>
+                    <a href="#">新郎拍摄婚纱照注意事项</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 积分商城结束 -->
+
+
+        <div class="firendlink">
+            <div class="s_tit clearfix">
+                <a href="#" class="c_titp"><img src="img/hometitle_24.gif"  /></a>
+                <a href="#" class="more">友情链接QQ787835815</a>
+            </div>
+            <div class="link">
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+                <a href="#">北京儿童摄影</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foor_t">
+            <div class="fo_content clearfix">
+                <div class="fo_list clearfix">
+                    <dl>
+                        <dt><a href="#">蒙娜丽莎/主页</a></dt>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">蒙娜丽莎/主页</a></dt>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">蒙娜丽莎/主页</a></dt>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#">蒙娜丽莎/主页</a></dt>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                        <dd><a href="#">北京婚纱摄影网</a></dd>
+                    </dl>
+                </div>
+                <div class="fo_r">
+                    <div class="fo_rt clearfix">
+                        <a href="#"><img src="img/qe.gif" class="le_pic" /></a>
+                        <div class="fo_rtr">
+                            <h2>ONLINE SERVICE</h2>
+                            <a href="#"><img src="img/footq_32.gif"></a>
+                            <a href="#"><img src="img/footq_32.gif"></a>
+                            <a href="#"><img src="img/footq_32.gif"></a>
+                            <a href="#"><img src="img/footq_32.gif"></a>
+                            <a href="#"><img src="img/footq_32.gif"></a>
+                        </div>
+                    </div>
+                    <div class="fo_rb clearfix">
+                        <a href="#"><img src="img/map.gif" class="le_pic" /></a>
+                        <div class="fo_rtr">
+                            <p class="time">WORK TIME<br /><span>AM.9:00~PM.10:00</span></p>
+                            <p class="site">公司地址：北京市东城区东四南大街143号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot_b">
+            <div class="f_content">
+                <p>北京婚纱摄影 | 婚纱照展示 | 影楼报价 | 摄影动态 | 联系我们</p>
+                <p>版权所有 © 2007-2012 北京蒙娜丽莎摄影有限公司 Map | Tag 站长统计站长统计站长统计</p>
+                <p>北京蒙娜丽莎唯一官网：http://www.mnlsbj.com/ 京ICP备12018289号</p>
+                <p>热门推荐：北京婚纱摄影、北京婚纱影楼、婚纱照或婚纱摄影外景，尽在蒙娜丽莎！ 网站技术、SEO优化支持：东辉创想</p>
+            </div>
+        </div>
+    </div>
+
+
+
+        
+        
+   
+</body>
+</html>

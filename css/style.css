@@ -908,7 +908,7 @@ p.copy-right a{
 .a_right{float: left; color: #f3f3f3;}
 .pro .c_color{background: #333;}
 
-
+#follow{ position:absolute; top:100px; left:100px; width:100px; height:100px; background:url(../assets/images/follow.png)  no-repeat; background-size: cover; line-height:200px; text-align:center; font-size:30px; color:red; }
 
 
 

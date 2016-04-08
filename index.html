@@ -433,6 +433,44 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 <a class="up scroll" href="#top-top"><span> </span></a>
 	  
  </div>
+
+ <div id="follow"></div>
+ <script>
+    window.onload=window.onscroll=window.onresize=function (){
+	oFollow=document.getElementById('follow');
+	var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+	var nMaxLeft=document.documentElement.clientWidth-oFollow.offsetWidth;
+	var nMaxTop=document.documentElement.clientHeight+scrollTop-oFollow.offsetHeight;
+	
+	document.onmousemove=function (ev){
+		var oEvent=ev || event;
+		var top=oEvent.clientY+scrollTop-oFollow.offsetHeight;
+		var left=oEvent.clientX;
+		
+		if (top < 0)
+		{
+			top=0;
+		}
+		/*else if (top > nMaxTop)
+		{
+			top=nMaxTop;
+		}*/
+		
+		if (left < 0)
+		{
+			left=0;
+		}
+		else if (left > nMaxLeft)
+		{
+			left=nMaxLeft;
+		}
+		
+		
+		oFollow.style.top=top+'px';
+		oFollow.style.left=left+'px';
+	};
+};
+ </script>
  
  </body>
  </html>

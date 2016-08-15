@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Christina
+ * @date    2016-07-14 15:59:46
+ * @version $Id$
+ */
+
+
+#fixed_box.fixed {
+position: fixed;
+top: 50px;
+z-index: 100;
+}
+
+/* 内容开始 */
+.con{width: 1200px; margin: 0 auto 20px;}
+.movie{margin-bottom: 18px; height: 650px; overflow: hidden;}
+.movie img{width: 100%;}
+.con_nav{line-height: 40px; text-indent: 1em; font-size: 13px; background: #f0f0f0;margin-bottom: 10px;}
+.con_nav a{font-size: 13px;}
+.main{width: 100%; border-bottom: 1px solid #e6e6e6;}
+.main_left{width: 830px;}
+.main_left,.ml_infor i{float: left;}
+.ml_tit h5{font-size: 28px; margin-bottom: 20px;}
+.ml_infor{font-size: 13px; margin-bottom: 36px;}
+.ml_infor i{margin-right: 18px;}
+.m_see{width: 27px; height: 21px; background: url(../img/see.png) no-repeat; padding-left: 30px;}
+.m_msg{width: 20px; height: 18px; background: url(../img/msg.png) no-repeat; padding-left: 30px;}
+/* */.ml_con img{width: 100%;}
+.ml_con{margin-bottom: 10px;}
+.ml_con p{margin: 0 0 11px 0; font-size: 14px; line-height: 24px; color: #4c4c4c;}
+.score{margin-top: 15px;}
+.score_con{margin-bottom: 16px;}
+.score p{font-size: 14px; margin-bottom: 20px;}
+.progress_bar{float: left; width: 690px; height: 30px; background: #f0f0f0;}
+.progress_bar div{ height: 100%; background: #d7ccab;}
+.grading{float: right; margin-right: 24px; line-height: 30px;}
+.main_right{float: right; width: 340px;}
+/* */.main_right img{width: 100%;}
+.mr_tit{border-bottom: 3px solid #000; font-size: 14px; padding-bottom: 4px;}
+.mr_list{margin-top: 14px;}
+.mr_list li{position: relative; margin-bottom: 10px; width: 340px;}
+.mr_sort{position: absolute; top: 0; left: 0; width: 45px; height: 45px; background: #e6e6e6; text-align: center; line-height: 45px; color: #000;}
+.heading{position: absolute;bottom: 10px; left: 0; width: 100%; height: 54px; text-align: center; color: #fff;}
+.heading p{font-size: 18px; margin-bottom: 9px; width: 98%;overflow: hidden;  text-overflow: ellipsis; white-space: nowrap; }
+.heading div{font-size: 12px;}
+.hover_opa{position: absolute;bottom: -2px; left: 0;width: 100%; height: 84px; background: url(../img/index/opa.png) repeat-x;}
+
+/* 内容结束 */
+
+
+
+/* 相关阅读开始 */
+.reading{width: 1200px; margin: 0 auto 20px;}
+.reading h5{margin-bottom: 10px;}
+.reading h5 i{padding: 0 0 5px 0;  font-size: 17px; border-bottom: 3px solid #000;}
+.reading li{position: relative; width: 390px; height: 238px; overflow: hidden; float: left; margin-right: 10px;}
+/*  */.reading img{width: 100%; margin-bottom: 10px;}
+.reading ul{ margin-top: 20px;}
+.reading li p{position: absolute; bottom: 23px; text-align: center; font-size: 20px; color: #fff; width: 100%; overflow: hidden;  text-overflow: ellipsis; white-space: nowrap;}
+/* 相关阅读结束 */
+
+
+/* 评论开始 */
+.comment{width: 1200px; margin: 0 auto 10px; border-top: 6px solid #e6e6e6;}
+.comment h6{margin: 10px 0 20px 0;font-size: 16px;}
+.comment .userpic{width: 8%;}
+.comment img{width:56px; height:56px; border-radius: 50%;;}
+.comment_on div{float: left;}
+.comm_con{width: 92%;}
+.comm_con textarea{width: 99%; height: 148px; font-size: 12px; margin-bottom: 10px; padding: 10px 0 0 10px; border: 1px solid #e6e6e6; color: #b3b3b3;}
+.comm_con span{float: right; cursor: pointer; width: 150px; height: 40px; line-height: 40px; text-align: center; background:#333333; color: #fff; font-size: 12px; margin-bottom: 20px;;}
+.review li{border-top: 1px solid #e6e6e6; padding-top: 13px;}
+.review li div{float: left;}
+.review li .re_button,.review li .re_btn{display: none; float: right; width: 68px; height: 22px; border: 1px solid #333; text-align: center; line-height: 22px; font-size: 12px; margin-top: 52px; margin-right: 20px; cursor: pointer;}
+.review li .re_cs{ margin: 52px 5px 0 0; }
+.review_con{margin-top: 20px; width: 84%;}
+.review_con p{margin-bottom: 21px;}
+.reply{width: 100%;}
+.re_con{width: 98%; margin: 10px; margin-bottom: 0; }
+.reply{background: #f7f7f7; border: 1px solid #e6e6e6; width: 109.2%;}
+.comment .reply .userpic{float: left;}
+.comment .reply .review_con{float: left; width: 82%;}
+.review_con p i{color: #999; padding-left: 18px;}
+.re_con span{float: left; margin-top: 85px; margin-right: 20px;}
+
+.reply_box{display: none; position: fixed; top: 50%;left: 50%; margin:-145px 0 0 -331px;  width: 662px; height: 290px; background: none repeat scroll 0% 0% #FFF; border-radius: 20px; box-shadow: 0px 0px 8px #B0B0B0; *border: 1px solid #ccc; border: 1px solid #ccc\0;}
+.reply_con{width: 602px; margin: 30px auto 0;}
+.rep_top{margin-bottom: 12px;}
+.rep_top h5{float: left; font-size: 14px; color: #333;}
+.rep_top i{float: right; width: 18px; height: 18px; background: url(../img/details/close.png); cursor: pointer;}
+.reply_con textarea{width: 98%; height: 144px;font-size: 12px; margin-bottom: 10px; padding: 10px 0 0 10px; border: 1px solid #e6e6e6; }
+.reply_middle{position: relative;}
+.reply_middle p{position: absolute; top: 10px; left: 10px; color: #b3b3b3; font-size: 12px; }
+.rep_bottom{width: 100%; height: 46px; background: #f2f2f2;}
+.rep_bottom .rep_btn{float: left; cursor: pointer;  margin: 8px 0 0 10px; width: 66px; height: 30px; background: #333; border: #ccc 1px solid; border-radius: 3px; color: #fff; text-align: center; line-height: 30px;}
+.rep_bottom p{float: right; margin: 8px 10px 0 0;}
+/* 评论结束 */

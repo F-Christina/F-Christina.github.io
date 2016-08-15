@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-07-18 14:14:33
+ * @version $Id$
+ */
+
+
+
+
+/* 内容开始 */
+.con{width: 1200px; margin: 0 auto 27px;}
+.con_nav{line-height: 40px; text-indent: 1em; font-size: 13px; background: #f0f0f0; margin-bottom: 10px;}
+.con_nav a{font-size: 13px;}
+.main{width: 100%;}
+.opa_box{position: absolute;top: 0; left: 0;width: 100%; height: 100%; background: #000; filter:alpha(opacity=50); opacity: 0.5;}
+.hover_opa{position: absolute;bottom: -2px; left: 0;width: 100%; height: 84px; background: url(../img/index/opa.png) repeat-x;}
+.main_left{float: left; width: 760px; margin:40px 20px 0 0;}
+.main_details{position: absolute; top: 378px; left: 0; padding-bottom: 30px; color: #fff; width: 100%;}
+.main_left .ml_list li{margin-bottom: 25px; width: 760px;}
+.pic_box{position: relative; display: block;}
+.main_left .ml_list li img{width: 100%;}
+.main_left .diaper_page{width: 100%;}
+.diaper_page .items{width: 575px; margin: 0 auto;}
+/* .main_left .items a{float: left; width: 40px; height: 40px; background: #f0f0f0; color: #808080; text-align: center; line-height: 40px; margin-right: 10px; cursor: pointer;}
+.main_left .items span{float: left;} */
+.main_left .items .dot{background: none;}
+/* .main_left .items a.current{background: #333; color: #fff;} */
+.main_left .items a:hover{background: #333; color: #fff;}
+.main_left .items a{display: inline-block; *display:inline; *zoom:1; color: #333;display: inline-block;width: 40px; height: 40px; width: 40px; line-height: 40px; background: #f0f0f0; text-align: center;  margin: 0 10px;vertical-align: middle;}
+.main_left .items span.current{display: inline-block; *display:inline; *zoom:1; width: 40px; height: 40px; width: 40px; line-height: 40px; margin: 0 10px;color: #fff; background-color: #333; text-align: center; vertical-align: middle;}
+.main_left .items span.disabled{display: inline-block; *display:inline; *zoom:1; width: 40px; height: 40px; width: 40px; line-height: 40px; margin: 0 10px;	color: #bfbfbf; background: #f2f2f2; text-align: center; vertical-align: middle;}
+.main_details h6{font-size: 24px; margin-bottom: 17px; text-align: center;}
+.main_details div{margin-left: 33%; font-size: 12px;}
+.main_details div i{margin-right: 15px; float: left; color: #ccc;}
+.main_details div .main_see i{width: 22px; height: 13px; background: url(../img/public/check.png) no-repeat; margin:2px 2px 0 0;}
+.main_details div .comment_number i{width: 16px; height: 16px; background: url(../img/list/comment.png) no-repeat; margin:1px 2px 0 0;}
+.ml_details{margin-top: 12px;}
+.ml_details p{width: 100%; margin-bottom: 14px; color: #4c4c4c; overflow: hidden;  text-overflow: ellipsis; white-space: nowrap;}
+.mr_hot{line-height: 44px;}
+.main_right{float: right; width: 420px;}
+/* */.main_right img{width: 100%;}
+.mr_tit{border-bottom: 3px solid #000; font-size: 14px; padding-bottom: 4px;}
+.mr_list{}
+.mr_list li{position: relative; margin-bottom: 20px;}
+.mr_sort{position: absolute; top: 0; left: 0; width: 45px; height: 45px; background: #e6e6e6; text-align: center; line-height: 45px; color: #000;}
+.heading{position: absolute;bottom: 10px; left: 0; width: 100%; height: 54px; text-align: center; color: #fff;}
+.heading p{font-size: 18px; margin-bottom: 9px;}
+.heading div{font-size: 12px; color: #ccc;}
+/* 内容结束 */
+
